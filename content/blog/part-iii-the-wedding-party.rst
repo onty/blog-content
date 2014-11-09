@@ -2,7 +2,7 @@ Part III, the wedding party.
 ############################
 :date: 2008-02-24 12:43
 :author: onty
-:category: Uncategorized
+:category: Family
 :slug: part-iii-the-wedding-party
 
 Been so long for next post, little busy with jobs (since when did a

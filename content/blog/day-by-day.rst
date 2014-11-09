@@ -2,7 +2,7 @@ day-by-day watching them grow...
 ################################
 :date: 2009-11-04 23:41
 :author: onty
-:category: Family, little achi
+:category: Family
 :tags: achi, izza
 :slug: day-by-day
 

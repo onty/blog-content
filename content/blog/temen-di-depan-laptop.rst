@@ -2,7 +2,7 @@ Temen di depan laptop
 #####################
 :date: 2009-01-10 14:39
 :author: onty
-:category: kue
+:category: Kue
 :slug: temen-di-depan-laptop
 
 Hari ini, Bunda lagi percobaan bikin kue kastangel, wuiiiih ennnaaakkkk.

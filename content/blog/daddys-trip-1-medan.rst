@@ -2,7 +2,7 @@ Daddy's trip #1, Medan
 ######################
 :date: 2009-12-25 11:35
 :author: onty
-:category: travell, travelling, trip
+:category: Travelling
 :tags: brastagi, grand angkasa medan, lembur kuring medan, martebe, tiara medan
 :slug: daddys-trip-1-medan
 

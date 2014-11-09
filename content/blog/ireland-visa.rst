@@ -2,7 +2,7 @@ Ireland VISA
 ############
 :date: 2014-03-23 20:48
 :author: onty
-:category: Ireland, travell, travelling
+:category: Travelling
 :tags: Green Card, Ireland, VISA
 :slug: ireland-visa
 

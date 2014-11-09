@@ -2,7 +2,7 @@ New Family Member....Welcoming Faizza Aulia Prasojo
 ###################################################
 :date: 2009-03-16 22:47
 :author: onty
-:category: Family, little achi
+:category: Family
 :tags: Faizza
 :slug: new-family-memberwelcoming-faizza-aulia-prasojo
 

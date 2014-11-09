@@ -2,7 +2,7 @@ Daddy's trip #1, Medan, part 2
 ##############################
 :date: 2009-12-25 15:08
 :author: onty
-:category: travell, travelling, trip
+:category: Travelling
 :tags: grand angkasa, medan, merdeka walk
 :slug: daddys-trip-1-medan-part-2
 

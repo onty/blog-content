@@ -2,7 +2,7 @@ Maem yuuuk :)
 #############
 :date: 2008-01-24 15:15
 :author: onty
-:category: continuous learning, little achi
+:category: little achi
 :tags: aktif, gtm
 :slug: maem-yuuuk
 

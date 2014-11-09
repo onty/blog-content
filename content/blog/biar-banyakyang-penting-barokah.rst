@@ -2,7 +2,7 @@ Biar banyak,yang penting barokah...
 ###################################
 :date: 2011-02-18 03:05
 :author: onty
-:category: continuous learning, Family
+:category: continuous learning
 :tags: renungan
 :slug: biar-banyakyang-penting-barokah
 

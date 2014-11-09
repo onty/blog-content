@@ -2,7 +2,7 @@ Pergi Belajar
 #############
 :date: 2008-05-29 15:47
 :author: widyani
-:category: continuous learning, little achi
+:category: continuous learning
 :tags: achi, belajar, lagu
 :slug: pergi-belajar
 
