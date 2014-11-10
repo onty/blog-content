@@ -3,12 +3,12 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Lintang JP'
-SITENAME = u"JPrasojo's Blog"
+SITENAME = u"JPrasojo's blog"
 SITEURL = ''
-
+THEME = "pelican-themes/bootstrap"
 PATH = 'content'
-THEME = "pelican-themes/new-bootstrap2"
-TIMEZONE = 'Europe/Dublin'
+
+TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'en'
 
