@@ -1,6 +1,7 @@
 Title: Apache Httpd and Tomcat integration using mod_jk, part 1
 Date: 2007-6-3
 Tags: 
+Category: Unix/Linux
 
 In my other blog, I've wrote about howto use mod_jk2 to integrate httpd and tomcat. The article can be accesed [here][1] and [here][2].
 Now, since mod_jk2 has not supported again by apache-tomcat-connector developers, so in this article I will use mod_jk. I'm using :

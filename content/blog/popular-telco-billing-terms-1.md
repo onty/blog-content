@@ -1,6 +1,7 @@
 Title: Popular telco billing terms #1
 Date: 2008-6-20
 Tags: Telco Billing
+Category: Telco
 
 I wrote this post in case if someone got interested on Telco Billing but they dont familiar with it's basic common glosarry in a telco billing environment. These cheat words will come in handy when you're in the middle of an interview :D for a billing position. At least it came to me during one of my interview :D
 

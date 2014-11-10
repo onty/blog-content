@@ -1,6 +1,7 @@
 Title: Why Telco? *Narsis
 Date: 2007-6-3
 Tags: 
+Category: Telco
 
 Kalo ditanya, kenapa bahagia di industry telco. Simply karena di sektor ini kayaknya teknologi berkembang terus, hampir tiap waktu (terlepas dari..apakah teknologinya sekarang akan kepake ato nggak, e.g: 3G ). Alasan lain, karena kayaknya di sektor inilah, orang-orang IT bener-bener *dianggap*. Industri lainnya mungkin adalah perbankan sama perminyakan. Sedangkan di industri lainnya, orang IT ada yang hanya jadi IT Support, they deserve more than that! Mereka asset berharga perusahaan ... tentunya kalo perusahaan tahu gimana cara membuat mereka usefull.
 Satu argumen dengan apa yg kumaksud *bener-bener dianggap*, artinya setelah mereka bikin aplikasi, jadi, mereka nggak ditinggalin gitu aja dan cuman buat support aplikasi itu. Jarang ada inovasi teknologi baru, kerjanya ya bikin Sistem Informasi. Kalo gitu ceritanya, gimana orang IT bisa berkembang, ya nggak ? Beda ama orang IT yg di 3 industri tadi, setelah aplikasi baru, jadi, mereka mungkin support, tapi mereka selalu dapet update teknologi terbaru. Mereka belajar banyak hal baru.

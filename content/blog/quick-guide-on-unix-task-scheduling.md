@@ -1,6 +1,7 @@
 Title: Quick guide on UNIX task scheduling with at and batch command
 Date: 2009-5-18
 Tags: Tips Unix Linux stuff
+Category: Unix/Linux
 
 While task scheduling in UNIX commonly uses Crontab facilities, UNIX based system (actually, Windows provide it too, at.exe) also provide at command. Both related to the same area, task scheduling. While Crontab aims to schedule a recurring command (every minutes, every month, every week, etc), at command aims to schedule a task that run once, with specific time arguments. Here’s one example of how we can schedule a task with at command:
 

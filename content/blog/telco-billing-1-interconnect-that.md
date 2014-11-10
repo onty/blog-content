@@ -1,6 +1,7 @@
 Title: Telco Billing #1, Interconnect that matters...
 Date: 2009-1-10
 Tags: Interconnect Telekomunikasi Telco Billing Interkoneksi
+Category: Telco
 
 Seperti disebutkan dalam judul diatas, bidang interkoneksi adalah bidang yang sangat berpengaruh dalam kelangsungan operasional sebuah operator, terutama buat operator non incumbent. Bagaimana tidak, bagi operator baru, tidak ada interkoneksi berarti tidak terhubung ke jaringan lain, pelanggan tidak akan bisa bertelpon/ber-sms ke operator lain ( terutama jika operator itu incumbent ), dan ini vital sekali. Peraturan Menkominfo tentang interkoneksi ini bisa di unduh [disini][1] .
 Dalam bidang interkoneksi dikenal istilah-istilah berikut :
