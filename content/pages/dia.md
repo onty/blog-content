@@ -1,0 +1,48 @@
+Title: Dia...
+Date: 2007-8-9
+Tags: 
+
+dia,...
+
+tidak perlu terkenal
+
+tidak perlu harus orang top
+
+
+
+dia,...
+
+haruslah sholihah,
+
+setia,
+
+ikhlas dan mau menerimaku apa adanya,
+
+memiliki senyum yang menyejukkan hati - sehingga ketika ku pulang tiap hari, segala penatku hilang diterpa senyum tulusnya
+
+
+
+dia,....
+
+haruslah seseorang yang dewasa dan bijak menyikapi keadaan yang ada,
+
+pandai bergaul dengan keluarga dan lingkungan sekitar
+
+
+
+dia,....
+
+dengan dia, kuingin arungi waktu, jalani hidup,
+
+bersama, menggapai bahtera yang ditakdirkan oleh sang Sutradara kehidupan
+
+
+
+
+
+me@KPPTI, 5th floor...
+
+bersama dinginnya AC yg kian menusuk...
+
+
+Originally posted : 16/04/05 11:03
