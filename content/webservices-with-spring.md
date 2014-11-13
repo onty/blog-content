@@ -7,9 +7,7 @@ These few days, I had a task to create a webservice client. Sounds interesting a
 Then I turn to find another simple and fast way to create webservice client. But, before that of course, since the remote system is not ready yet, I have to create some dummy web service first. Weblogic 9.2 having strange behaviour. First, we create webservice project from the Eclipse-based-IDE. After that, we generate the wsdl files. But, dont ever try to validate it :D because it will fail. Just pass and use those webservice to create weblogic client. That's strange, fail to validate, but it works :D
 
 Ok, dont waste time, since I already had the webservice simulator works no matter how :p I began to create the webservice client. Coding from scratch ? no, it's painful, and I need to do it fast. I turn out to spring and axis which offers it's integration. This is my bean config sample :
-[code]
-
-
+```
 org.apache.axis.client.ServiceFactory
 
 
@@ -30,8 +28,8 @@ com.ericsson.mi3g.sub.aggregatedinfo.wsclient.RemoteInfoPortIntf
 
 com.ericsson.mi3g.sub.aggregatedinfo.wsclient.RemoteInfoServiceIntf
 
+```
 
-[/code]
 
 I'm using AggregatedInfoJaxRpcProxyFactoryBean, this is a class that extends JaxRpcPortProxyFactoryBean. We need to extend it to override the postProcessJaxRpcService(Service service) method that will be used to register which deserializer would be used to object that I pull from webservice. First time I try to run, the method is not being called at all, I'm curious. But after googling, I found out that we need to import the right class for the arguments. It should be javax.xml.rpc.encoding.Service;
 
@@ -39,25 +37,6 @@ Ok, the webservice client is done, now it's time to develop the database persist
 
 The database persistence done. Now, create the ant script to run this module, since I had lots of CLASSPATH to include. I can't put it all in bash script and change all the path when it's moved out to production. So, this is my ant script :
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-I also add quartz, since this module will run daily. Quartz is a enterprise scheduler written in java. Here's my configuration :
 
 
 
