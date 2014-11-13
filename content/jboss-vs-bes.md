@@ -4,7 +4,9 @@ Tags:
 Category: Java
 
 Finally, I know why I got this error :
+```
 javax.naming.NameNotFoundException: OracleDS not bound ...
+```
 
 Padahal di browse di Jboss console ada loh OracleDS. Udah kucoba ngeganti dengan java:OracleDS, java:/OracleDS, java:comp/env/OracleDS, semua nggak bisa....
 
