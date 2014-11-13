@@ -104,12 +104,12 @@ root@pegasus > df -kh
 ```
 Go to /tmp/somewhere, and make sure there’s a directory called sol10/, if not, then the nfs root stil wrong. 
 
-13. Configure bootparams in /etc/bootparams, fill in this entry: 
+13\. Configure bootparams in /etc/bootparams, fill in this entry: 
 ```
 solclient root=pegasus:/sol10/Solaris_10/Tools/Boot install=pegasus:/sol10/ boottype=:in 
 ```
 
-14. You might want to see what's happen in your pegasus using tcpdump: 
+14\. You might want to see what's happen in your pegasus using tcpdump: 
 
 ```
 root@pegasus > tcpdump -i eth0 
@@ -138,7 +138,7 @@ listening on eth0, link-type EN10MB (Ethernet), capture size 96 bytes
 10:45:43.677350 IP solclient.afpovertcp > pegasus.nfs: . ack 39691397 win 41992 
 ... 
 ```
-15. Boot your solclient from ok prompt: 
+15\. Boot your solclient from ok prompt: 
 ```
 ok boot net -v - install 
 Boot device: /pci@1f,0/pci@1,1/network@c,1 File and args: -v - install 
