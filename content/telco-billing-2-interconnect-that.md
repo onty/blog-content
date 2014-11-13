@@ -11,11 +11,15 @@ Lalu apa untungnya memakai sistem Cost Based ini ? Syahdan pada jaman dahulu kal
 Seperti uraian diatas, di dalam billing interkoneksi, juga dikenal istilah sambungan lokal, dan sambungan jarak jauh (SLJJ) seperti di billing retail. Bedanya, kalau di billing retail, penentuan lokal dan SLJJ didasarkan pada POC pemanggil dan penerima. Kalau POC nya sama, maka dihitung tariff lokal, dan kalau berbeda maka dihitung tariff SLJJ. Misal, kalau kita telpon dari Bandung yang POC nya 022 (Ingat, POC kira-kira sama dengan kode area, well...more or less) ke Bandung juga, maka tariffnya adalah lokal. Kalau dari Bandung ke Jakarta ( 021 ) maka tariffnya adalah interlokal (SLJJ), karena POC nya berbeda.
 Nah, kalau di billing interkoneksi, penentuan lokal dan SLJJ agak sedikit berbeda. Di billing interkoneksi, yang berpengaruh adalah POI operator caller, dan POC operator yang dituju. Sebuah call diperhitungkan lokal, jika POI nya sama dengan POC tujuan. Misal, operator X dan Y membuat titik interkoneksi ( POI ) di Surabaya. Lalu ada pelanggan operator X dari Mojokerto misalnya, menelpon saudaranya yang berlangganan operator Y di Surabaya. Maka biaya interkoneksinya akan menjadi lokal. Kenapa ? karena POI operator X dan Y berada di Surabaya, dan operator tujuan ( operator Y ) adalah di Surabaya, POI = POC tujuan. Sedangkan si pengguna operator X di Mojokerto tadi, terkena charge tariff retail SLJJ, karena POC pemanggil != POC tujuan. Disinilah perbedaan mendasar antara billing retail dan billing interkoneksi.
 Billing Retail ( billing yang dikenakan pada pelanggan ) :
+```
 1\. Lokal, jika POC A = POC B
 2\. SLJJ, jika POC A != POC B
+```
 Billing interkoneksi ( billing antar operator ) :
+```
 1\. Lokal, jika POI A = POC B
 2\. SLJJ, jika POI A != POC B
+```
 
 Lalu bagaimana dengan tariff interkoneksi untuk internasional call ( SLI ) ? Seperti yang kita ketahui, kini ada 3 operator yang memiliki lisensi untuk SLI ini, Telkom, Indosat, dan BTel. Artinya, mau tidak mau, operator yang ada haruslah memiliki perjanjian transit dengan salah satu dari 3 operator ini. Dari sini, tariffnya adalah tariff per-negara. Dan biasanya, operator-operator yang lain tinggal membundling tariff SLI dari operator pemilik lisensi SLI ini, ke dalam tariff retail mereka, dan sistemnya adalah komisi. Biaya interkoneksi dibayarkan penuh, namun untuk tiap panggilan yang melewati sistem interkoneksi operator pemilik lisensi SLI tadi, operator pemanggil akan mendapatkan komisi, yang besarnya tentu saja tergantung dari volume traffik yang dilewatkan. Begitu juga dengan panggilan masuk dari luar negeri. Trafficnya juga hanya bisa melalui 3 operator SLI tadi, dan tariffnya tergantung perjanjian antara operator SLI dengan operator penerima panggilan yang sebenarnya.
 
