@@ -1,6 +1,7 @@
 Title: Telco Billing #2, Interconnect that matters...
 Date: 2009-1-13
 Tags: 
+Category: Telco
 
 Ok, sekarang penentuan tarif interkoneksi.
 Sejak tahun 2007, Indonesia menganut sistem Cost Based Interconnection (kalau di dunia lebih dikenal dengan Bottom Up-Long Run Incremental Cost, dan saat ini konsultan nya buat negara kita yaitu Ovum, yang merekomendasikan sistem Cost Based ini di Indonesia ). Ilustrasi di paragraf ketiga akan mencoba menjelaskan dengan bahasa manusial normal, tentang bagaimana sistem ini bekerja. Intinya adalah, semua variable yang berpengaruh dalam pembuatan sebuah panggilan, akan diperhitungkan di dalamnya. Seperti kita ketahui, ketika kita membuat suatu panggilan suara ( baca: nelpon ), di dalamnya kita melibatkan BTS, BSC, MSC, dan IN dari operator. Dan begitu juga ketika panggilan kita disampaikan ke nomer tujuan, komponen yang terlibat kurang lebih sama. Nah, semua komponen tersebut memiliki biaya produksi, termasuk diperhitungkan juga biaya penyusutannya. Hasilnya adalah tariff interkoneksi, lokal, SLJJ, dan Internasional, per menit, untuk durasi yang lebih dari 5 detik. Artinya, call yang melibatkan interkoneksi kurang dari 5 detik, tidak akan di charge. Kenapa 5 detik ? karena nilai ini dianggap sebagai waktu maksimum yang dibutuhkan agar perangkat-perangkat interkoneksi antar operator dapat berbicara satu sama lain. Kalau bisa kurang dari itu ya bagus, kalau tidak, kemungkinan besar anda akan dapat drop call.

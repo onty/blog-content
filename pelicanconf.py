@@ -3,11 +3,11 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Lintang JP'
-SITENAME = u"JPrasojo's Blog"
+SITENAME = u"JPrasojo's blog"
 SITEURL = ''
-
+THEME = "pelican-themes/bootstrap"
 PATH = 'content'
-THEME = "pelican-themes/new-bootstrap2"
+
 TIMEZONE = 'Europe/Dublin'
 
 DEFAULT_LANG = u'en'
@@ -23,11 +23,11 @@ AUTHOR_FEED_RSS = None
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
          ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+         ('Theprasojos Family', 'http://theprasojos.wordpress.com'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('Twitter', 'https://twitter.com/jprasojo'),
+          ('Linkedin', 'https://www.linkedin.com/in/lintangprasojo'),)
 
 DEFAULT_PAGINATION = 6
 

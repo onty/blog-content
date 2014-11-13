@@ -1,6 +1,7 @@
 Title: My (Outdated) Mac OS.X 10.4.1
 Date: 2007-6-3
 Tags: 
+Category: Unix/Linux
 
 I think this picture will describe enough for us ...
 

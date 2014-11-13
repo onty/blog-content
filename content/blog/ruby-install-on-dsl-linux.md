@@ -1,6 +1,7 @@
 Title: Ruby Install on DSL Linux
 Date: 2007-11-13
 Tags: Ruby DSL Linux stuff
+Category: Unix/Linux
 
 Went home earlier than before today, after a day full of meeting with client. I missed my linux. Got a bling about ruby. This stuff sounds cool. Lot's of java programmer migrating to this language, let's give it a shot. I started my adventure by googling with some 'beginner standars' keyword regarding ruby : "howto install ruby", and I got these links :
 \- http://www.ruby-lang.org/id

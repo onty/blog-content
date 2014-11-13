@@ -1,6 +1,7 @@
 Title: Teknologi CDMA 450
 Date: 2008-12-21
 Tags: Telco Billing CDMA 450 3G
+Category: Telco
 
 Minggu siang, iseng-iseng menyalakan speedy dan browsing. Saya menemukan banyak artikel tentang CDMA 450, yang pas banget dengan bidang tempat kerja saya sekarang.
 Jadi ceritanya begono, pada jama dahulu kala, tersebutlah sebuah teknologi analog bernama NMT, Nordic Mobile Telephone. Teknologi NMT ini kira-kira sekelas dengan teknologi AMPS yang ada sebelum jaman GSM dulu.Orientasinya voice only, lalu muncullah teknologi GSM, yang perbedaan 'paling terlihat' nya dengan AMPS adalah kemampuannya untuk mengirim SMS, dan satu hal lagi yang waktu itu masih nice to have-tapi sangat berpengaruh saat ini, apa itu ? yak, anda benar, GPRS. Namanya juga industri yang berbasis teknologi, maka dunia telekomunikasi dan para pelaku-pelaku di dalamnya juga harus berbenah menghadapi evolusi teknologi yg semakin berkembang. Para pelaku di dunia telekomunikasi tadi juga semakin merasa, bahwa mereka memerlukan sebuah standarisasi dari varian teknologi yang banyak berkembang. Muncullah organisasi-2 seperti GSMA (GSM Association->3GPP), dan CDG(CDMA Development Group->3GPP2). Lalu, CDMA 450 ini posisinya dimana ? Sabar sabar...
