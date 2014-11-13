@@ -1,6 +1,7 @@
 Title: Kru-keadilan.....last word.
 Date: 2007-8-9
 Tags: Laptop
+Category: Renungan
 
 Kru-keadilan, gak terasa kamu udah lama menemaniku sejak 2002. Saat-saat yang indah dan pahit kita lalui silih berganti, sampai tiba saatnya aku harus melepasmu, demi kebaikan semua.
 

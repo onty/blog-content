@@ -1,6 +1,7 @@
 Title: Kado buat bapak
 Date: 2007-8-9
 Tags: Family
+Category: Renungan
 
 Guratan-guratan usia itu tampak mewarnai wajahnya.
 

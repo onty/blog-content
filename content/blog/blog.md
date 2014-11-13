@@ -1,6 +1,7 @@
 Title: Blog
 Date: 2007-8-9
 Tags: 
+Category: Renungan
 
 akhirnya....walaupun dengan IE dan sejumput koneksi starone :p akhirnya bisa ngisi BLOG lagi....
 

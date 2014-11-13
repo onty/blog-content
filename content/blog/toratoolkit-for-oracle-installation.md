@@ -1,6 +1,7 @@
 Title: Tora(Toolkit for Oracle) Installation
 Date: 2007-6-1
 Tags: Linux stuff
+Category: Unix/Linux
 
 Yesterday I managed to install my laptop with Tora. I'm using Kubuntu Feisty Fawn.For you who doesnt have any idea what kind of animal Tora is, let me give you some hint. If you used to use Toad in M$-Windows to do your oracle database-related jobs, well, you can say that Tora has similar usage.It can runs on Linux, make your life simpler, and easier, he he. Hey, it's your laptop that should work for you, not you're the one that has to work for your laptop, right ?
 Ok, here's the step I saved from my installation adventure :

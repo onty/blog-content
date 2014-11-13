@@ -1,6 +1,7 @@
 Title: Petualangan bulan ini..
 Date: 2007-8-9
 Tags: Travel
+Category: Renungan
 
 baru sadar, tiga minggu berturut-turut, setiap akhir pekan, aku pasti di luar kota.
 

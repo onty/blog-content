@@ -1,6 +1,7 @@
 Title: Dia...
 Date: 2007-8-9
 Tags: 
+Category: Renungan
 
 dia,...
 

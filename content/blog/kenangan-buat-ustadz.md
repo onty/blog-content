@@ -1,6 +1,7 @@
 Title: Kenangan buat ustadz ...
 Date: 2007-8-9
 Tags: Renungan
+Category: Renungan
 
 Merendahlah,
 

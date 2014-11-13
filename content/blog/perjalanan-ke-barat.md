@@ -1,6 +1,7 @@
 Title: Perjalanan Ke Barat....
 Date: 2007-8-9
 Tags: 
+Category: Renungan
 
 Besok, ke Jakarta, first flight, mengadu nasib, mengubah sejarah :p
 Rencananya besok nginep di masjid, sambil semoga bisa nginep di tempat mas Yono98, di tempat mas Heri Surahman katanya ada iparnya dua dateng, jadi agak rame, gak enak juga sih. Opsinya : masjid UI Salemba, sama kosnya mas Yono98.

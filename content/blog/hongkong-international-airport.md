@@ -1,6 +1,7 @@
 Title: Hongkong International Airport
 Date: 2007-6-3
 Tags: 
+Category: Telco
 
 It's good to have your laptop travels with you. Like this, in airport, we dont have to be boring while we wait for the plane. Fast connection, provided by PCCW, one of Hongkong's telco operator. Thankyou PCCW.
 

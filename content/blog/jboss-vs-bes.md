@@ -1,6 +1,7 @@
 Title: JBoss Vs BES
 Date: 2007-6-3
 Tags: 
+Category: Java
 
 Finally, I know why I got this error :
 javax.naming.NameNotFoundException: OracleDS not bound ...

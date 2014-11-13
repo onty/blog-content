@@ -1,6 +1,7 @@
 Title: Buat hacker keadilan...
 Date: 2007-8-9
 Tags: 
+Category: Renungan
 
 For hacker-keadilan ....
 

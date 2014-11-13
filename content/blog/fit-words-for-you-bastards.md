@@ -1,6 +1,7 @@
 Title: Fit Words for you Bastards
 Date: 2007-8-9
 Tags: 
+Category: Renungan
 
 Satu hal !
 

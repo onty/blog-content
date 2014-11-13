@@ -1,6 +1,7 @@
 Title: Solaris Jumpstart on Linux
 Date: 2010-8-10
 Tags: jumpstart Unix Linux stuff solaris
+Category: Unix/Linux
 
 **_Intro :_
 **

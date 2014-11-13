@@ -1,6 +1,7 @@
 Title: Something wrong with me ???
 Date: 2007-8-9
 Tags: 
+Category: Renungan
 
 Something wrong with me.
 Gak tau kenapa, cuman ngerasa aja, kalo ada sesuatu yang berubah pada diriku.

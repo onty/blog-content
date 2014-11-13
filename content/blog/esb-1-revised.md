@@ -1,6 +1,7 @@
 Title: ESB #1 (Revised)
 Date: 2007-6-3
 Tags: 
+Category: Java
 
 Baru dapet chm tentang ESB(Enterprise Service Bus), karangan Dave Chappel dari [mas Ari][1]. Nih ulasan bab pertamanya :
 

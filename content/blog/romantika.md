@@ -1,6 +1,7 @@
 Title: Romantika...
 Date: 2007-8-9
 Tags: 
+Category: Renungan
 
 Ada pesona romantika datang tiba-tiba
 

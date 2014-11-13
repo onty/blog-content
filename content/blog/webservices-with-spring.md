@@ -1,6 +1,7 @@
 Title: Webservices with spring
 Date: 2007-6-3
 Tags: 
+Category: Java
 
 These few days, I had a task to create a webservice client. Sounds interesting and challenging, because usually if we depends on weblogic's control, we can make any webservices client much much easier, just a few click, and tadaaa. The problem is, the webservice client will become stand alone module, so, I can't use any java controls since those controls will be managed by weblogic container during runtime.
 Then I turn to find another simple and fast way to create webservice client. But, before that of course, since the remote system is not ready yet, I have to create some dummy web service first. Weblogic 9.2 having strange behaviour. First, we create webservice project from the Eclipse-based-IDE. After that, we generate the wsdl files. But, dont ever try to validate it :D because it will fail. Just pass and use those webservice to create weblogic client. That's strange, fail to validate, but it works :D

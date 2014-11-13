@@ -1,6 +1,7 @@
 Title: Ngabuburit dengan PHP
 Date: 2007-8-9
 Tags: 
+Category: Renungan
 
 Assalamu'alaikum ...
 

@@ -1,7 +1,7 @@
 Title: Mawar Merah ...
 Date: 2007-8-9
 Tags: 
-
+Category: Renungan
 
 
 Memang ku tak mampu belikan dia Perhiasan...

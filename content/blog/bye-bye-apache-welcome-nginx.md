@@ -1,6 +1,7 @@
 Title: Bye bye apache, welcome Nginx
 Date: 2008-12-22
 Tags: aTutor Unix Linux stuff Web Server Internet Nginx
+Category: Unix/Linux
 
 Bagi saya, php tetap memiliki kenangan yang indah dalam mengisi hari-hari pemrograman saya terdahulu. Programming language yang fleksibel, dan nggak pake ribet. Justru kesulitan ditemui ketika deploy di server. Kebanyakan server yang tersedia sudah diinstall default dengan bundle apache, beserta modul-modul yang sudah di tentukan sebelumnya. Kalau pake keluarga Redhat, iya kalau kebetulan dapet rpm yang pas versinya, kalo nggak ? Cara paling enak memang tetap dengan compile dari source, karena kita bisa bongkar pasang modul yang kita inginkan, tambahkan semaunya, kurangi sesukanya. Jaman dulu(nggak dulu banget sih, 2004), saya hanya kenal Apache dan IIS buat jadi webserver untuk skrip php saya. Belakangan ini, muncul sebuah webserver yang tidak terlalu terkenal, tapi sepertinya ampuh. Kenapa ampuh ? Coba anda pergi ke netcraft.com, dan coba anda scan situs wordpress.com dan detik.com, apa webserver mereka ? Mereka pakai Nginx (baca:engine X). Ini dua situs besar loh, dan saya sangat yakin, tiap hari banyak diantara kita yang berinteraksi dengan kedua situs ini, ya tho ? Nggak mungkin dong mereka pake webserver yang kurang 'terkenal' kalo nggak karena mereka merasakan keampuhan dibaliknya, tul ndak ? Coba buka aja deh langsung di [situsnya][1].
 
@@ -28,15 +29,17 @@ lintang@cygnus:~$ make
 Seharusnya nanti, di direktori src/ akan ada file bernama spawn-fcgi. Kopikan file tersebut ke directory /usr/bin sebagai berikut :
 lintang@cygnus:~$ sudo cp spawn-fcgi /usr/bin/
 Lalu anda buat skrip .sh sederhana sebagai berikut :
+```
 lintang@cygnus:/usr/local/php-5.2.6$ cat > /usr/bin/php-fastcgi #!/bin/sh
 
 /usr/bin/spawn-fcgi -a 127.0.0.1 -p 8999 -f /usr/local/php-5.2.6/bin/php-cgi
 
-EOF
+```
 
 Ini adalah skrip untuk menjalankan PHP sebagai proses CGI yang terpisah dari webserver anda nantinya. PHP akan membuka socket di port 8999, dan akan binding di interface lo(127.0.0.1) anda, sehingga hanya bisa diakses dari mesin anda sendiri.
 Ok, langkah terakhir tinggal setup nginx.conf anda, punya saya ada di sini /etc/nginx/nginx.conf.
 Berikut isi file konfigurasi Nginx saya :
+```
 user www-data;
 worker_processes 4;
 
@@ -64,9 +67,11 @@ gzip on;
 include /etc/nginx/sites-enabled/*;
 
 }
+```
 Perhatikan baris yang di bold, bahwa Nginx saya berjalan atas nama user www-data, sehingga user ini mutlak harus ada sebelumnya, sepertinya kalau di Ubuntu, user ini dibuatkan otomatis ketika kita install Nginx yah, saya lupa sih :D.
 Baris selanjutnya, worker_processes, saya isi 4. User yang mengakses webserver saya disini kurang dari 100 orang, dan selama ini, 4 worker sudah cukup sih.
 Lalu selanjutnya, gzip on, ini modul gzip compress yang kita aktifkan setelah sebelumnya kita install zlib. Dan yang terakhir, kita akan meng-include kan semua file konfigurasi di direktori /etc/nginx/sites-enabled. Berikut contoh file konfigurasi saya di direktori tersebut :
+```
 Filename : atutor.conf
 server {
 listen 80;
@@ -103,6 +108,7 @@ fastcgi_param SCRIPT_FILENAME /var/www/nginx-default$fastcgi_script_name;
 include /etc/nginx/fastcgi_params;
 }
 }
+```
 
 Konfigurasi ini mengatakan bahwa, saya memiliki sebuah aplikasi (kebetulan aTutor), yang saya letakkan di /var/www/nginx-default, dan untuk semua URL yang berakhiran .php, maka saya akan lemparkan requestnya ke CGI interpreter PHP yang berjalan di port 8999 seperti konfigurasi PHP diatas.
 

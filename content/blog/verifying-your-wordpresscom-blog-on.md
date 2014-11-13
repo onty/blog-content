@@ -1,6 +1,7 @@
 Title: Verifying your wordpress.com blog on google webmaster central
 Date: 2009-12-26
 Tags: wordpress verify google webmaster Internet
+Category: Unix/Linux
 
 Google webmaster is one of google's great application for every webmaster's to dig more on their on websites. Especially if the webmaster wanted to know how google bot sees their website. There we can see what does most people on our websites query for. Also, we can see which other websites that provide links to our website. Want to see it more clearly ? just open webmaster.google.com and type in your gmail's account to log in.
 

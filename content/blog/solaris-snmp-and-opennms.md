@@ -1,6 +1,7 @@
 Title: Solaris, SNMP, and OpenNMS
 Date: 2007-6-3
 Tags: 
+Category: Unix/Linux
 
 These day, I explore about SNMP. After wikipedia-ing in [here][1], I try to install one of the recomended software called OpenNMS. After tried the live demo, it looks cool. So I decided to download it in [here][2].
 I followed all the installation step guide from [here][3]. I also need to download and install the pre requisites package such as rrdtool, and the postgresql. Fortunately, blastwave.org has great tools called pkg-get, yeap, sounds familiar with you Debian users ? I also thought that only Nexenta OS has this such-thing tools, but now, all solaris distro can use this tools I guess, well, at least I tried that one and it works for Solaris in both Sparc and Intel machine.

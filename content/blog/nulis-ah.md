@@ -1,6 +1,7 @@
 Title: Nulis Ah...
 Date: 2007-8-9
 Tags: 
+Category: Renungan
 
 It's holiday from friday to sunday, some people might spend their time with thier families. Here, I spend my time hanging around the virtual world. Nevermind, so what ? this is my life :)
 

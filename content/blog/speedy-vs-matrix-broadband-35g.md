@@ -1,6 +1,7 @@
 Title: Speedy Vs Matrix Broadband 3.5G
 Date: 2008-12-18
 Tags: Broadband at home Internet 3G
+Category: Telco
 
 Uhm, ok let's get this straight, here's my opinion for those written titles above. We will compare only the 'unlimited' versions of them. I'm currently using the Speedy personal with 1Gb quota, and 1024 Kbps bandwidth (but it's free from 8pm to 8am - next morning, so I consider this unlimited too). And for the backup, I'm using Matrix Broadband 3.5G with Isat Eco package.It's unlimited quota, the bandwidht was around 256 Kbps, but if your usage reaches 2Gb, they will limit your bandwidth until up to 64 Kbps. Both costs me around Rp 100rb per month.
 

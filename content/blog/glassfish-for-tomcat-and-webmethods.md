@@ -1,6 +1,7 @@
 Title: Glassfish for Tomcat and WebMethods
 Date: 2007-12-1
 Tags: 
+Category: Java
 
 These recent days I've been played around with Glassfish in my project. I have to build connectivity between our existing Card Management for Telco company product, created with pure jsp (yes, jsp treated as PHP, spaghetti or whatever you name it) to integrate with SAP. Our client provides WebMethods Integration server 6.5 as our only and only way to interact with the SAP. OK then, I grabbed some code from my previous project with Tomcat and WebMethods 6.1 and try to reuse them in this project. Well, it works. But this code only deals with connectivity. Tomcat contacts WebMethods, and that's it. All transaction maintained by WebMethods, no need to think about rollback, commit, or anything, we apply that on WebMethods's flow services. So simple and cool !. But this current project is different. Installed WebMethods dont have any license of JDBC Adapter, it only has SAP Adapter. So in order to save to database or whatever to our Card Management system, we have to build our own connectivity method. Previously we thought about creating Stored Procedure inside our database that later can be invoked by WebMethods's JDBC Adapter, but the client doesnt want to buy the license. Hmm....
 

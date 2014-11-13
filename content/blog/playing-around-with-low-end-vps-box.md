@@ -1,6 +1,7 @@
 Title: Playing around with low end VPS box
 Date: 2010-4-5
 Tags: Tips Unix Linux stuff Web Server Nginx
+Category: Unix/Linux
 
 Last week I just bought a VPS account for playing around with. It feels so great having our own shell account with root login so that we can do anything inside. I bought it from [here][1]. First of all, I bought the minimalist one, with 64mb memory, with no burstable ram :D, using Centos. I simply cant do anything, their Centos installation itself took around 20-30mb ram. I also not well enough playing with Yum. This is not great, so I upgraded the account to 128mb ram. At the same time I noticed that besides Centos, the hosting provider also provide Debian Lenny as the OS....why dont you said that from the beginning ??? :D Now, I'm running Lenny with 128mb ram. The VM specs itself it's not that bad, considering it's powered with 2 cpu @3Ghz, 128mb ram with no swap ( this guy [here][2] shares a great script to create a fake swap, but I dont need it any longer ;) read the rest of the entry to know why... ), and with 10Gb disk, more than enough storage for minimalist like me :)
 
