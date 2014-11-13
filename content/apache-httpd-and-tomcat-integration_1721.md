@@ -1,6 +1,7 @@
 Title: Apache Httpd and Tomcat integration using mod_jk, part 2
 Date: 2007-6-3
 Tags: 
+Category: Unix/Linux
 
 This posting splitted because somehow blogspot just cut it. I don't know why but when I previewed the posting, blogspot just cut the postings, so I splitted it into 2 parts.
 
