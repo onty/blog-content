@@ -4,16 +4,22 @@ Tags: Interconnect Telekomunikasi Telco Billing Interkoneksi
 Category: Telco
 
 Seperti disebutkan dalam judul diatas, bidang interkoneksi adalah bidang yang sangat berpengaruh dalam kelangsungan operasional sebuah operator, terutama buat operator non incumbent. Bagaimana tidak, bagi operator baru, tidak ada interkoneksi berarti tidak terhubung ke jaringan lain, pelanggan tidak akan bisa bertelpon/ber-sms ke operator lain ( terutama jika operator itu incumbent ), dan ini vital sekali. Peraturan Menkominfo tentang interkoneksi ini bisa di unduh [disini][1] .
+
 Dalam bidang interkoneksi dikenal istilah-istilah berikut :
-**1\. POC (Point of Charge)**
+
+**1. POC (Point of Charge)**
 Kalau jaman PSTN(telpon rumah kabel) hanya ada cuma Telkom saja seperti dulu, POC ini kita kenal dengan istilah kode area. Katakanlah Mojokerto, maka kode area nya 0321, Surabaya, 031, dst. Seiring dengan waktu, muncullah telepon seluler, yang untuk menentukan POC nya sebenarnya lebih sulit, karena sifatnya yang mobile dan dapat berpindah-pindah, akibatnya POC untuk telepon seluler ini tidak menyerap 100% dari POC milik PSTN dan FWA(telepon cdma yang non seluler, seperti flexi, esia, hepi). POC ini adalah basis yang digunakan untuk menentukan dimana lokasi penelpon dan penerima telpon.
-**2\. POI (Point of Interconnection)**
+
+**2. POI (Point of Interconnection)**
 Adalah titik dimana alur traffic mengarah masuk atau keluar, dari network lokal milik operator yang bersangkutan, menuju ke network milik operator lain. Kita akan lebih mudah memahami ini dengan contoh kasus, yang akan diulas lebih lanjut di bawah. Yang jelas, semakin banyak kita memiliki POI dengan operator lain (dan yang ter-utilisasi dengan optimal tentunya ) maka cost interkoneksi ini akan jauh lebih bisa ditekan.
-**3\. Originasi**
+
+**3. Originasi**
 Adalah titik dimana alur traffic berasal.
-**4\. Transit**
+
+**4. Transit**
 Adalah titik dimana alur traffic disalurkan melalui network operator lain, untuk kemudian bisa sampai ke tujuan. Bayangkan ini seperti ketika kita memaketkan barang lewat tiki. Tiki adalah titik transit pertama kita, untuk kemudian bisa sampai ke tujuan.
-**5\. Terminasi**
+
+**5. Terminasi**
 Adalah titik dimana alur traffic berakhir di tujuan.
 
 Ke-lima komponen ini berpengaruh penting dalam penentuan tarif biaya interkoneksi, yang pada ujungnya juga akan mempengaruhi tarif retail akhir yang akan ditawarkan ke pelanggan. Itulah kenapa ketika pemerintah memutuskan untuk menurunkan tarif interkoneksi antar operator, tarif retail juga diharapkan akan ikut turun.
