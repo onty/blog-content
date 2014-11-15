@@ -8,13 +8,13 @@ Baru dapet chm tentang ESB(Enterprise Service Bus), karangan Dave Chappel dari [
 
 Bab pertama ngejelasin tentang apa itu ESB(Enterprise Service Bus). Tahun-tahun sebelumnya kita mengenal istilah Service Oriented Architecture (SOA), Enterprise Application Integration (EAI), Business-to-Business (B2B), dan web services. Semua teknologi ini intinya sama, yaitu improvisasi hasil bisnis dari integrasi sistem-sistem yang telah ada sebelumnya. Sedangkan konsep ESB lebih kepada "..loosely coupled, highly distributed integration network that can scale beyond the limits of a hub-and-spoke EAI broker" . Jadi ketika bicara tentang ESB, maka didalamnya akan meliputi :
 ```
-1\. Messaging
+1. Messaging
 
-2\. Web Services
+2. Web Services
 
-3\. Transformasi data
+3. Transformasi data
 
-4\. Intelligent Routing yang mampu meneruskan message dari node satu ke yang lain tanpa melalui mekanisme broadcast.
+4. Intelligent Routing yang mampu meneruskan message dari node satu ke yang lain tanpa melalui mekanisme broadcast.
 
 
 ```
