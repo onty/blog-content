@@ -40,12 +40,25 @@ Balance management ini termasuk didalamnya manajemen sisa pulsa :D. Tau kan, jam
 
 Nah, selain fungsi dasar diatas, biasanya OCS juga bisa melakukan hal-hal sbb:
 1\. Mengirimkan notifikasi ke pelanggan
+Pernah gak tiba-tiba nerima notifikasi 'sisa pulsa anda tinggal Rp xxx,- kirim 2 sms lagi untuk mendapat free sms seharian'. Nah, fitur notifikasi seperti ini bisa dimiliki oleh OCS. Alasannya ya wajar, karena OCS melakukan rating dan charging secara realtime, maka OCS bisa memberikan notifikasi lebih akurat juga. Fitur ini juga banyak dipakai buat pelanggan yang sedang roaming ke luar negeri, untuk menerima notifikasi peringatan tagihan ketika mencapai usage tertentu. Beberapa negara yang saya tau sudah mulai memiliki regulasi agar setiap operator memiliki fungsi notifikasi roaming control seperti ini.
 
 2\. Maintain lifecycle 
+Lifecycle itu lebih populer dengan nama 'masa tenggang' kalo di sistem prabayar. Masa tenggang pertama, anda hanya bisa menerima panggilan. Masa tenggang berikutnya, nomer anda di blok tidak bisa melakukan dan menerima panggilan. Masa tenggang berikutnya, pulsa anda hangus :). Masa tenggang terakhir ? Nomer anda sudah dihapus dari jaringan telekomunikasi (baca:hangus). Nah, karena OCS menyimpan data subscription (kapan mulai start berlangganan, kapan masa tenggang, berapa sisa pulsa, dst), maka OCS juga lah yang biasanya secara realtime akan melakukan komunikasi dengan network element (dalam hal ini HLR, Home Location Register), untuk melakukan pemblokiran nomer.
 
 3\. Maintain announcement list buat pelanggan
+Pernah gak, sisa pulsa tinggal 500 perak, lalu dipake buat nelpon ? Biasanya kita dapet 'ceramah' panjang dulu dari operator, isinya kira-kira 'pulsa anda hampir habis, silakan melakukan isi ulang bla bla bla', trus baru telponnya nyambung. Lalu contoh lain, ketika lagi gencar promo dari operator, 1x tiap hari ketika akan melakukan panggilan telepon, anda dapet 'ceramah' lagi ? nah, OCS juga bisa mengirimkan kode announcement ke MSC, berubah-ubah sesuai dengan kondisi pelanggan. MSC akan menerima perintah pemutaran announcement, dan memutar announcement yang diperintahkan.Atau ketika nomer anda hampir expired, anda akan mendengar 'ceramah' untuk segera membeli voucher baru :)
 
 4\. Revenue Reporting
+Kalo ini sepertinya udah jelas ya, OCS juga merupakan sumber digalinya laporan keuangan laba perusahaan :). Hal ini biasanya tidak diproses secara realtime, karena OCS dirancang untuk transaksi online, bukan sebagai transaksi reporting. Biasanya setiap kali sebuah event selesai dirating, OCS akan menulis data transaksi berupa file CDR ( Call Detail Record ) yang kemudian bisa di proses dan di feed kedalam database untuk keperluan reporting.
+
+5\. QoS control
+Nah, ini fungsi terbaru OCS yang paling keren di era Broadband. Yak, OCS juga bisa memberikan data mengenai QoS yang seharusnya dimiliki oleh pelanggan. Misal, seorang pelanggan A berlangganan paket data yang paling murah, seribu perak seharian, internet unlimited. Lalu ada pelanggan B, berlangganan paket data premium 500 ribu perak sebulan. Nah, karena OCS memaintain data paket apa saja yang dimiliki pelanggan, maka OCS juga merupakan sumber informasi QoS apa yang seharusnya diberikan pada pelanggan. Untuk pelanggan premium, tentu sudah seharusnya mendapat QoS paling tinggi, wajar karena dia bayar mahal untuk paket datanya. Nah, informasi QoS ini akan diberikan oleh OCS melalui sebuah protokol yang baru di sahkan oleh 3GPP, namanya Sy. Lebih lanjut tentang protokol charging di bagian ke 2 ya. Intinya, informasi QoS profile akan di feed oleh OCS ke PCRF, yang akan menerima query dari PCEF tentang QoS profile apa yang seharusnya di apply untuk tiap pelanggan.
+Lho, ngapain harus lewat PCRF, kenapa PCEF nggak langsung nanya ke OCS kalo gitu, daripada harus lewat calo dulu kan ? :D. Ya bisa juga sih, spek 3GPP memungkinkan PCEF mengirim protokol Gx ke either PCRF atau OCS langsung (kalau OCS nya support). Masalahnya arsitektur yang terlanjur berkembang untuk paket data adalah, terpisahnya database pelanggan dan database QoS paket data. Arsitektur yang umum ( karena network operator biasanya adalah evolusi dari 2G, 3G, ke 4G ) yaitu database QoS ditaruh di PCRF, dan database pelanggan(account dan balance) berada di OCS. Nah untuk menyatukan data pelanggan ini, dan juga agar ketika mendaftarkan paket data tidak perlu mendaftarkan ke 2 tempat (OCS dan PCRF), maka arsitektur yang baru dikembangkan adalah, data pelanggan akan dimaintain di OCS, dan PCRS akan menggunakan protokol Sy untuk mengambil data QoS dari OCS, dan mengapply nya via PCEF. 
 
 
+Udah pusing? berasa mbulet ? Silakan tinggalkan komentar. Kalau ada yang dirasa kurang masuk akal juga monggo silakan tinggalkan komentar. Kalau saya yang salah, tulisannya akan saya ralat, tidak usah kuatir ;)
 
+
+Lanjut ke part 2 yah, protokol standar apa aja yang disupport oleh -kebanyakan- Online Charging System :)
+
+Cheers.
