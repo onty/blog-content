@@ -37,6 +37,7 @@ Nah, setelah costnya berhasil ditentukan, tinggal ngurangin pulsa deh, secara re
 Balance management ini termasuk didalamnya manajemen sisa pulsa :D. Tau kan, jaman sekarang pake smartphone, data nyala terus, sambil kirim sms, pulsa habis, trus pelanggan isi ulang dan ngecek sisa pulsanya. Nah, ada duit masuk, duit keluar, dan bisa jadi menuju ke 'dompet pulsa' yang sama. Ini maksudnya balance management.
 
 Nah, selain fungsi dasar diatas, biasanya OCS juga bisa melakukan hal-hal sbb:
+
 <strong>1\. Mengirimkan notifikasi ke pelanggan</strong>
 Pernah gak tiba-tiba nerima notifikasi 'sisa pulsa anda tinggal Rp xxx,- kirim 2 sms lagi untuk mendapat free sms seharian'. Nah, fitur notifikasi seperti ini bisa dimiliki oleh OCS. Alasannya ya wajar, karena OCS melakukan rating dan charging secara realtime, maka OCS bisa memberikan notifikasi lebih akurat juga. Fitur ini juga banyak dipakai buat pelanggan yang sedang roaming ke luar negeri, untuk menerima notifikasi peringatan tagihan ketika mencapai usage tertentu. Beberapa negara yang saya tau sudah mulai memiliki regulasi agar setiap operator memiliki fungsi notifikasi roaming control seperti ini.
 
