@@ -1,10 +1,8 @@
-Apa itu Online Charging System(OCS) Part 1
-###########################################
-:date: 2014-11-23 18:34
-:author: Lintang JP
-:category: Telco
-:tags: Charging System, OCS, Prepaid System, Intelligent Network
-:slug: apa-itu-ocs-part-1
+Title: Apa itu Online Charging System(OCS) Part 1
+Date: 2014-11-23 18:34
+Author: Lintang JP
+Category: Telco
+Tags: Charging System, OCS, Prepaid System, Intelligent Network
 
 Assalamu'alaikum,
 
