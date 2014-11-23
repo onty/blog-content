@@ -16,7 +16,7 @@ picture of Indonesia in some old movie, I wasn't born yet that day :p ).
 If you see the buses, the people, and how the city looks like, then you
 might end up with the same conclusion with me :D.
 
-.. figure:: http://theprasojos.files.wordpress.com/2014/07/2014-06-20-13-52-22.jpg
+.. figure:: http://theprasojos.files.wordpress.com/2014/07/2014-06-20-13-52-22.jpg?h=100&w=500
    :align: center
 
 No pic hoax ? Here's one of the picture I took during my journey from
@@ -33,14 +33,14 @@ foreigner here.
 
 Here's the bus view in Harare..
 
-.. figure:: http://theprasojos.files.wordpress.com/2014/07/cam01478.jpg
+.. figure:: http://theprasojos.files.wordpress.com/2014/07/cam01478.jpg?h=100&w=500
    :align: center
 
 But wait, there's also tall building here in this country :). During my
 first week here, /// put me on Crowne plaza hotel located on the city
 centre, surrounded by few tall buildings.
 
-.. figure:: http://theprasojos.files.wordpress.com/2014/07/2014-06-15-17-01-26.jpg
+.. figure:: http://theprasojos.files.wordpress.com/2014/07/2014-06-15-17-01-26.jpg?h=100&w=500
    :align: center
 
 See ? Not too bad, except the internet speed :D. I can only really
@@ -53,14 +53,14 @@ improved first here before they want to go to the next step.
 
 --- Updated, here's the other city view of Harare..
 
-.. figure:: http://theprasojos.files.wordpress.com/2014/07/cam01484.jpg
+.. figure:: http://theprasojos.files.wordpress.com/2014/07/cam01484.jpg?h=100&w=500
    :align: center
 
 Now, the good thing about this country is that, there's almost no
 traffic jam :). We can go to the airport from /// office in about 30
 minutes on daytime.
  
-.. figure:: http://theprasojos.files.wordpress.com/2014/07/2014-06-25-08-51-41.jpg
+.. figure:: http://theprasojos.files.wordpress.com/2014/07/2014-06-25-08-51-41.jpg?h=100&w=500
    :align: center
 
 Wider road with less cars, compare this to Jakarta :). And yes, I rarely seen
@@ -77,7 +77,7 @@ them.  And yes, they held a friendly 17an match to celebrate Indonesia's
 independence day, where  I won Gaple match, with pak Tachsin Fernandi as
 my co-player....:)
 
-.. figure:: http://theprasojos.files.wordpress.com/2014/07/2014-06-21-16-19-29.jpg
+.. figure:: http://theprasojos.files.wordpress.com/2014/07/2014-06-21-16-19-29.jpg?h=100&w=500
    :align: center
 
 There's only about 40 Indonesian people here in Zimbabwe, including the kids.

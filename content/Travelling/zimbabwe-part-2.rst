@@ -27,7 +27,7 @@ Ied prayer started around 8.15. We went to Arcadia mosque, where we met
 most of Indonesian people there. I went together within the same car
 with the embassy staff. Here's our selfie picture from inside the car :)
 
-.. figure:: http://theprasojos.files.wordpress.com/2014/08/cam01613.jpg
+.. figure:: http://theprasojos.files.wordpress.com/2014/08/cam01613.jpg?h=100&w=500
    :align: center
 
 After Ied pray, everybody gathered around outside the mosque. They
@@ -37,7 +37,7 @@ met before, Dr Widi and his family. They drove from Bulawayo directly to
 Harare specially to celebrate the Ied al Fitr together with Indonesian
 people in Harare :).
 
-.. figure:: https://theprasojos.files.wordpress.com/2014/08/cam01609.jpg
+.. figure:: https://theprasojos.files.wordpress.com/2014/08/cam01609.jpg?h=100&w=500
    :align: center
 
 And that day continued as usual, since it's Monday. No official holiday
@@ -45,7 +45,7 @@ for me :). It's different with in Indonesia, it's like nothing big going
 on that day, it's just normal day, business as usual. That is 1 major
 difference in celebrating Ied Al Fitr far away from home.
 
-.. figure:: http://theprasojos.files.wordpress.com/2014/08/cam01618.jpg
+.. figure:: http://theprasojos.files.wordpress.com/2014/08/cam01618.jpg?h=100&w=500
    :align: center
 
 Now, it's time to go back to Jakarta, and celebrate the Ied Al Fitr

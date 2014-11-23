@@ -22,10 +22,13 @@ seperti di daerah stasiun kota lah. Atau kalau di Surabaya seperti di
 daerah semut atau jagalan.
 
 |Medan Street 1|
+
 Oh ya, dua gambar ini ngambil gambarnya sambil naik becak loh, bukan
 becak motor, tapi becak sepeda. Jadi gambarnya nggak kehalang kaca
 kendaraan..
+
 |Medan Street 2|
+
 Sempat jalan juga ke Merdeka Walk. Sebuah tempat yang penuh dengan
 makanan dan warung tenda. Di situ juga ada lapangan seperti alun-alun,
 yang -kata pak sopir- sering dipake konser kalo ada artis-artis ibukota.
@@ -34,6 +37,7 @@ agak kabur karena diambil dari mobil, dan karena malam hari, kurang
 pencahayaan, maklum..modal HP doang buat ambil fotonya, he he.
 
 |Medan Street|
+
 Kalau hari pertama dan kedua nginepnya di Tiara Medan, hari ke tiga dan
 keempat nginepnya di Grand Angkasa. Ini terjadi karena ada kejadian
 tidak terduga, he he. Well, baguslah, jadi bisa ngerasain 2 hotel

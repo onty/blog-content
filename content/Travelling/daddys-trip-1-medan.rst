@@ -35,8 +35,10 @@ yang kulihat malam itu. Disini kita coba sebuah minuman khas medan...jus
 martebe, markisa+terung belanda.
 
 .. figure:: http://theprasojos.files.wordpress.com/2009/12/dsc00371x.jpg?h=100&w=500
-   :align: center
    :alt: Martebe Juice
+   :height: 400px
+   :width: 300px
+   :align: center
 
 Martebe Juice
 Rasanya yaaa, seperti rasa markisa dicampur terung belanda :p, ada
@@ -83,20 +85,28 @@ dengan antena parabola di tiap rumah :D, dan udara yang masih bersih.
 
 Sempat mampir juga di sebuah pom bensin menuju brastagi, dengan latar
 belakang sebuah gunung, entah gunung apa namanya, ada yang tahu ?
+
 |Gunung di belakang pom bensin|
+
+
 Ada juga pahat-pahatan yang indah di sebuah dinding dalam perjalanan ke
-brastagi, nggak sempat turun untuk nanya temanya apa. Lalu ada juga tugu
-perjuangan yang berdiri di persimpangan jalan. Kalau ada yang tahu apa
-nama tugu ini, pls comment yah..
+brastagi, nggak sempat turun untuk nanya temanya apa.
+
 |Pahatan dinding|
+
+Lalu ada juga tugu perjuangan yang berdiri di persimpangan jalan. Kalau ada 
+yang tahu apa nama tugu ini, pls comment yah.
+
 |Sebuah tugu perjuangan|
 
 Akhirnya sampai deh di brastagi. Disambut oleh pemandangan keadaan
 perkotaan dari atas bukit. Kalau di Malang, mungkin brastagi itu daerah
 Pacet nya lah. Banyak orang menawarkan sewa kuda, banyak warung juga
 dengan pemandangan yang menarik.
+
 |Top view#1|
 |Top view#2|
+
 4 hari yang lumayan melelahkan, tunggu bagian 2 nya dari episode medan
 ini yah, mau jumatan dulu soalnya, he he.
 
@@ -106,6 +116,6 @@ bersambung....
 .. |Sepertinya kantor pemerintahan| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00384.jpg?h=100&w=500
 .. |Gunung di belakang pom bensin| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00386.jpg?h=100&w=500
 .. |Pahatan dinding| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00388.jpg?h=100&w=500
-.. |Sebuah tugu perjuangan| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00389x.jpg?h=100&w=500
+.. |Sebuah tugu perjuangan| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00389x.jpg?h=70&w=300
 .. |Top view#1| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00390.jpg?h=100&w=500
 .. |Top view#2| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00393.jpg?h=100&w=500

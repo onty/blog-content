@@ -22,3 +22,12 @@ DELETE_OUTPUT_DIRECTORY = False
 
 DISQUS_SITENAME = "jprasojos"
 GOOGLE_ANALYTICS = "UA-56589451-1"
+
+ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+
+YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
+MONTH_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/index.html'
+DAY_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/index.html'
+
+ARCHIVES_SAVE_AS = 'index.html'
