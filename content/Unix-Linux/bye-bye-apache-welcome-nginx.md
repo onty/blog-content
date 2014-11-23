@@ -7,28 +7,54 @@ Bagi saya, php tetap memiliki kenangan yang indah dalam mengisi hari-hari pemrog
 
 
 Ok, karena saya bukan pembuat Nginx, sejarahnya tidak akan saya beberkan disini. Berikut sebagai pengingat saja buat saya (syukur kalau berguna buat anda juga) untuk ngebangun server PHP siap pakai dengan Nginx dan lighttpd.
+
 Berikut Linux saya, ubuntu 7.10 :
+
+```
 lintang@cygnus:~$ uname -a
 Linux cygnus 2.6.22-14-generic #1 SMP Sun Oct 14 23:05:12 GMT 2007 i686 GNU/Linux
+```
+
 Disini kebetulan waktu nginstall, saya pake apt-get saja untuk nginx nya, baru php dan lighttpdnya yang compile dari source. Selain nginx, kita juga harus install dependenciesnya, terutama pcre dan zlib, serta openssl kalau anda ingin.
+
+```
 root@cygnus:~# apt-get install libpcre3 libpcre3-dev zlib1g zlib1g-dev nginx
+```
+
 Tunggu sejenak, bikin kopi dulu juga boleh. Atau kalau anda ingin waktu anda efisien, mari kita donlot dulu PHP dan Lighttpd nya :D
 Saya ambil PHP versi 5.2.6, dan Lighttpd versi 1.4.19. Dari mana ? please deh, silakan googling, mudah didapat kok kedua-duanya.
 Ok, kita mulai dengan PHP dulu, silakan ekstrak, compile, dan install. Berikut opsi yang saya gunakan untuk PHP saya.
+
+```
 lintang@cygnus:~$ ./configure --prefix=/usr/local/php-5.2.6 --with-mysql --enable-fastcgi --with-sockets --with-zlib
+```
+
 Ini berarti, kita akan instal PHP kita nanti di direktori /usr/local/php-5.2.6, mengikut-sertakan library koneksi php untuk mysql, membuat PHP yang berfungsi sebagai interpreter CGI ( nantinya skrip PHP bisa dijalankan dari shell, mirip /bin/bash atau /usr/bin/perl), lalu PHP tersebut dapat memiliki/membuka socket tersendiri (nantinya PHP akan berjalan sebagai process yang terpisah dari webserver, tidak seperti model Apache dimana PHP berjalan sebagai modul di dalamnya), lalu yang terakhir, mengikut sertakan library php untuk support kompresi dengan tipe Gzip.
 Tunggu sejenak, setelah sukses, silakan lakukan langkah dibawah seperti biasa :
+
+```
 lintang@cygnus:~$ make
 lintang@cygnus:~$ sudo make install
+```
+
 Nah, coba cek di direktori /usr/local/php-5.2.6/bin, seharusnya ada file executable bernama php-cgi. File inilah yang akan berjalan sebagai interpreter PHP anda dari shell.
 Menurut beberapa sumber dari internet, sebenarnya php-cgi ini saja cukup untuk dipanggil dari Nginx nantinya untuk menjalankan PHP, namun akan lebih baik apabila kita mengambil spawner dari project Lighttpd. Spawner ini akan mengeksekusi php-cgi kita. Berikut langkah-langkahnya, seperti biasa, silakan ekstrak Lig
+
+```
 lintang@cygnus:~$ ./configure --prefix=/opt/lighttpd-1.4.19 --enable-static --disable-shared
+```
+
 Kira-kira maksudnya, kita akan menconfigure Lighttpd sebagai library static yang dependenciesnya mutlak terhadap file-file .so tertentu. Opsi static ini membuat program yang kita compile akan jauh lebih cepat, karena versi dependencies di dalamnya seperti di hardcode. Berkebalikan dengan ketika kita compile dengan modus dinamis, hasilnya program akan lebih lambat, namun dependencies terhadap versi library tertentu bisa dihindari. Kalau kita ingin membuat server yang cepat, siapa peduli dengan dinamisasi, bukan begitu ? :p
 Lalu seperti biasa, kita jalankan make, tapi kali ini tanpa make install.
+
+```
 lintang@cygnus:~$ make
+```
+
 Seharusnya nanti, di direktori src/ akan ada file bernama spawn-fcgi. Kopikan file tersebut ke directory /usr/bin sebagai berikut :
 lintang@cygnus:~$ sudo cp spawn-fcgi /usr/bin/
 Lalu anda buat skrip .sh sederhana sebagai berikut :
+
 ```
 lintang@cygnus:/usr/local/php-5.2.6$ cat > /usr/bin/php-fastcgi #!/bin/sh
 
@@ -71,6 +97,7 @@ include /etc/nginx/sites-enabled/*;
 Perhatikan baris yang di bold, bahwa Nginx saya berjalan atas nama user www-data, sehingga user ini mutlak harus ada sebelumnya, sepertinya kalau di Ubuntu, user ini dibuatkan otomatis ketika kita install Nginx yah, saya lupa sih :D.
 Baris selanjutnya, worker_processes, saya isi 4. User yang mengakses webserver saya disini kurang dari 100 orang, dan selama ini, 4 worker sudah cukup sih.
 Lalu selanjutnya, gzip on, ini modul gzip compress yang kita aktifkan setelah sebelumnya kita install zlib. Dan yang terakhir, kita akan meng-include kan semua file konfigurasi di direktori /etc/nginx/sites-enabled. Berikut contoh file konfigurasi saya di direktori tersebut :
+
 ```
 Filename : atutor.conf
 server {
@@ -113,11 +140,22 @@ include /etc/nginx/fastcgi_params;
 Konfigurasi ini mengatakan bahwa, saya memiliki sebuah aplikasi (kebetulan aTutor), yang saya letakkan di /var/www/nginx-default, dan untuk semua URL yang berakhiran .php, maka saya akan lemparkan requestnya ke CGI interpreter PHP yang berjalan di port 8999 seperti konfigurasi PHP diatas.
 
 And that's it, kita bisa mengetes konfigurasi nginx kita dengan perintah :
+
+```
 lintang@cygnus:~$ sudo nginx -t
+```
+
 Lalu untuk menjalankan nginx bisa dengan perintah sbb :
+
+```
 lintang@cygnus:~$ sudo nginx
+```
+
 Kalau kita ada perubahan konfigurasi nginx, setelah selesai mengedit file konfigurasi, untuk merestart nginx bisa dengan perintah sbb :
+
+```
 lintang@cygnus:~$ sudo killall -HUP nginx
+```
 
 Udah deh, silakan arahkan browser anda di port 80, aplikasi anda siap melayani user :)
 

@@ -5,9 +5,11 @@ Category: Unix/Linux
 
 Hehe, alhamdulillah, seneng juga bisa nyobain nexenta alpha 5 walau hanya di vmware. Sempat kaget nggak nemu pkgadd, malah nemu apt-get. Dan pertama bingung juga waktu mau install package dasar -> GCC karena kalo install satu-satu dependancy nya kan nggak mungkin (bisa kriting). Akhirnya nemu repository yg harus ditambahin di /etc/apt/sources.list yaitu :
 
+```
 deb http://gnusolaris.org/apt-obsolete elatte-unstable main contrib non-free
 deb-src http://gnusolaris.org/apt-obsolete elatte-unstable main contrib non-free
 
+```
 Terus, kepentok juga ketika menghadapi proxy kantor yg make ISA Server, dimana harus masukin username/password domain. Solusinya, make ini : http://ntlmaps.sourceforge.net/
 
 Happy nexenta-ing ... :)

@@ -19,7 +19,6 @@ CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 DELETE_OUTPUT_DIRECTORY = False
 
 # Following items are often useful when publishing
-
 DISQUS_SITENAME = "jprasojos"
 GOOGLE_ANALYTICS = "UA-56589451-1"
 
@@ -30,4 +29,4 @@ YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/index.html'
 DAY_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/index.html'
 
-ARCHIVES_SAVE_AS = 'index.html'
+ARCHIVES_SAVE_AS = 'archives/index.html'

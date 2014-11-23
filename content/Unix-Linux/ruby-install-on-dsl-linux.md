@@ -6,16 +6,29 @@ Category: Unix/Linux
 Went home earlier than before today, after a day full of meeting with client. I missed my linux. Got a bling about ruby. This stuff sounds cool. Lot's of java programmer migrating to this language, let's give it a shot. I started my adventure by googling with some 'beginner standars' keyword regarding ruby : "howto install ruby", and I got these links :
 \- http://www.ruby-lang.org/id
 \- http://hivelogic.com/narrative/articles/ruby_rails_lighttpd_mysql_tiger?status=301
+
 Great, I boot up my DSL linux under qemu, and start downloading the necessary package. I tried to install using DSL's extension facilities (MyDSL-ruby.dsl) but, I don't know if it's work. So I decided to download the source, and compile it, just like the good old days :)
+
 First, I downloaded ruby [here][1]. And then as usual, run 3 commands :
+
+```
 dsl@1[ruby-1.8.6]$ ./configure --prefix=/opt/ruby-1.8.6
 dsl@1[ruby-1.8.6]$ make
 dsl@1[ruby-1.8.6]$ sudo make install
+```
+
 And, I got my ruby installed in /opt/ruby-1.8.6. Dont forget to add the path reference to ruby's bin/ directory installation as follows (mine at /opt/ruby-1.8.6/bin) :
+
+```
 export PATH=/opt/ruby-1.8.6/bin:$PATH
+```
+
 To make my life easier, I put that line in /etc/profile, and run : source /etc/profile. Check whether it points to the right path, type : irb, it should shows you some prompt like this :
+```
 dsl@0[Installer]$ irb
 irb(main):001:0>
+
+```
 
 Ok, I continued my journey by getting a tools called RubyGems. This RubyGems is a handy command-line tool for managing the installation of Ruby packages, like Rails ('quoted from [here][2] ').
 I downloaded it from [here][3].
@@ -31,8 +44,16 @@ And RubyGems will download all the needs.
 
 While RubyGems downloading my Rails installation, I went to next step and install PCRE and Lighttpd. PCRE is a Ruby regex extensions stands for Perl Compatible Regular Expression. I downloaded it from [here][4]. While Lighttpd is a webserver that became the default one when we choose Rails. I downloaded Lighttpd from [here][5].
 First, PCRE. I run : ./configure, make, and make install. I done the same command with Lighttpd, only that I gave different prefix on each ./configure like this :
-PCRE : ./configure --prefix=/opt/pcre-7.4
-Lighttpd : ./configure --prefix=/opt/Lighttpd-1.4.18
+
+PCRE : 
+```
+./configure --prefix=/opt/pcre-7.4
+```
+
+Lighttpd : 
+```
+./configure --prefix=/opt/Lighttpd-1.4.18
+```
 And the rest make and make install commands were same.
 
 Ok, I should be ready for rock and roll with ruby on rails.
