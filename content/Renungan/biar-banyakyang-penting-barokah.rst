@@ -3,8 +3,8 @@ Biar banyak,yang penting barokah...
 :date: 2011-02-18 03:05
 :author: onty
 :category: Renungan
-:tags: Renungan,continues learning
-:slug: biar-banyakyang-penting-barokah
+:tags: Renungan
+:slug: biar-banyak-yang-penting-barokah
 
 Kemaren,ayah terpaksa ngantor naik taksi,karena motornya dipake buat
 ngurus imb.Sang sopir taksi bercerita,sambil mengisi waktu di
