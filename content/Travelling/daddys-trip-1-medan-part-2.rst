@@ -51,8 +51,8 @@ Selama di Medan, pagi dan siang hari dimanfaatkan untuk jalan-jalan,
 dan malamnya ? tentu saja di kantor client, he he. Ok, sekian dulu.
 Episode ke 2 adalah perjalanan ke Balikpapan. Tunggu ya....
 
-.. |Medan Street 1| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00408.jpg
-.. |Medan Street 2| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00411.jpg
-.. |Medan Street| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00416.jpg
-.. |Sebuah mobil di depan grand angkasa| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00414x.jpg
-.. |Sebuah TV layar datar di hotel grand angkasa| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00420.jpg
+.. |Medan Street 1| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00408.jpg?h=100&w=500
+.. |Medan Street 2| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00411.jpg?h=100&w=500
+.. |Medan Street| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00416.jpg?h=100&w=500
+.. |Sebuah mobil di depan grand angkasa| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00414x.jpg?h=100&w=500
+.. |Sebuah TV layar datar di hotel grand angkasa| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00420.jpg?h=100&w=500

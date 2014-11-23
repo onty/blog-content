@@ -34,7 +34,7 @@ gede. Pengunjungnya kebanyakan orang-orang tionghoa, well setidaknya itu
 yang kulihat malam itu. Disini kita coba sebuah minuman khas medan...jus
 martebe, markisa+terung belanda.
 
-.. figure:: http://theprasojos.files.wordpress.com/2009/12/dsc00371x.jpg
+.. figure:: http://theprasojos.files.wordpress.com/2009/12/dsc00371x.jpg?h=100&w=500
    :align: center
    :alt: Martebe Juice
 
@@ -52,7 +52,7 @@ kalau mereka lagi ke medan. Kamarnya standar aja, dapet yang double bed.
 Internet hanya ada di lobby dengan WiFi. Untungnya dapet kamar lantai 2
 yang masih keliatan dari lobby, jadinya masih dapet deh sinyal WiFi nya.
 
-.. figure:: http://theprasojos.files.wordpress.com/2009/12/dsc00376.jpg
+.. figure:: http://theprasojos.files.wordpress.com/2009/12/dsc00376.jpg?h=100&w=500
    :align: center
    :alt: Seseorang sedang menunggu di lobby hotel Tiara Medan
 
@@ -68,7 +68,7 @@ bianglala raksasa sih, ini tempat tujuan wisata, tapi mungkin masih pagi
 ya \*sampai sana jam 11.00, jadi mungkin masih sepi pengunjung. Kita
 lanjut deh nanjak ke brastagi.
 
-.. figure:: http://theprasojos.files.wordpress.com/2009/12/dsc00378.jpg
+.. figure:: http://theprasojos.files.wordpress.com/2009/12/dsc00378.jpg?h=100&w=500
    :align: center
    :alt: Sebuah kincir raksasa di greenhill city
 
@@ -102,10 +102,10 @@ ini yah, mau jumatan dulu soalnya, he he.
 
 bersambung....
 
-.. |Rumah-rumah dengan parabolanya| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00383.jpg
-.. |Sepertinya kantor pemerintahan| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00384.jpg
-.. |Gunung di belakang pom bensin| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00386.jpg
-.. |Pahatan dinding| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00388.jpg
-.. |Sebuah tugu perjuangan| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00389x.jpg
-.. |Top view#1| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00390.jpg
-.. |Top view#2| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00393.jpg
+.. |Rumah-rumah dengan parabolanya| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00383.jpg?h=100&w=500
+.. |Sepertinya kantor pemerintahan| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00384.jpg?h=100&w=500
+.. |Gunung di belakang pom bensin| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00386.jpg?h=100&w=500
+.. |Pahatan dinding| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00388.jpg?h=100&w=500
+.. |Sebuah tugu perjuangan| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00389x.jpg?h=100&w=500
+.. |Top view#1| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00390.jpg?h=100&w=500
+.. |Top view#2| image:: http://theprasojos.files.wordpress.com/2009/12/dsc00393.jpg?h=100&w=500

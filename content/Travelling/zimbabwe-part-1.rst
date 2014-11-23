@@ -16,8 +16,8 @@ picture of Indonesia in some old movie, I wasn't born yet that day :p ).
 If you see the buses, the people, and how the city looks like, then you
 might end up with the same conclusion with me :D.
 
-`|2014-06-20
-13.52.22| <https://theprasojos.files.wordpress.com/2014/07/2014-06-20-13-52-22.jpg>`_
+.. figure:: https://theprasojos.files.wordpress.com/2014/07/2014-06-20-13-52-22.jpg
+   :align: center
 
 No pic hoax ? Here's one of the picture I took during my journey from
 hotel to /// office. Unfortunately I don't have the picture for the old
@@ -33,26 +33,15 @@ foreigner here.
 
 Here's the bus view in Harare..
 
-`|CAM01478| <https://theprasojos.files.wordpress.com/2014/07/cam01478.jpg>`_
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
+.. figure:: http://theprasojos.files.wordpress.com/2014/07/cam01478.jpg>
+   :align: center
 
 But wait, there's also tall building here in this country :). During my
 first week here, /// put me on Crowne plaza hotel located on the city
 centre, surrounded by few tall buildings.
 
-`|2014-06-15
-17.01.26| <https://theprasojos.files.wordpress.com/2014/07/2014-06-15-17-01-26.jpg>`_
+.. figure:: http://theprasojos.files.wordpress.com/2014/07/2014-06-15-17-01-26.jpg
+   :align: center
 
 See ? Not too bad, except the internet speed :D. I can only really
 browse the internet on 5-6 AM in the morning. When I came back to hotel
@@ -64,29 +53,17 @@ improved first here before they want to go to the next step.
 
 --- Updated, here's the other city view of Harare..
 
-`|CAM01484| <https://theprasojos.files.wordpress.com/2014/07/cam01484.jpg>`_
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
+.. figure:: http://theprasojos.files.wordpress.com/2014/07/cam01484.jpg
+   :align: center
 
 Now, the good thing about this country is that, there's almost no
 traffic jam :). We can go to the airport from /// office in about 30
 minutes on daytime.
-
  
+.. figure:: http://theprasojos.files.wordpress.com/2014/07/2014-06-25-08-51-41.jpg
+   :align: center
 
-`|2014-06-25
-08.51.41| <https://theprasojos.files.wordpress.com/2014/07/2014-06-25-08-51-41.jpg>`_\ Wider
-road with less cars, compare this to Jakarta :). And yes, I rarely seen
+Wider road with less cars, compare this to Jakarta :). And yes, I rarely seen
 any motor bikes here, which is probably a good thing :D.
 
 And the other good thing, Indonesia has its embassy here. So, I went
@@ -100,9 +77,10 @@ them.  And yes, they held a friendly 17an match to celebrate Indonesia's
 independence day, where  I won Gaple match, with pak Tachsin Fernandi as
 my co-player....:)
 
-`|2014-06-21
-16.19.29| <https://theprasojos.files.wordpress.com/2014/07/2014-06-21-16-19-29.jpg>`_\ There's
-only about 40 Indonesian people here in Zimbabwe, including the kids.
+.. figure:: http://theprasojos.files.wordpress.com/2014/07/2014-06-21-16-19-29.jpg
+   :align: center
+
+There's only about 40 Indonesian people here in Zimbabwe, including the kids.
 Not so much, but that makes them big family together in a foreign
 country :) If you are interested more, just invite their Facebook
 account "Perwakin Harare".
@@ -113,10 +91,3 @@ Ok, that is all for part 1, time to go back to the apartment and prepare
 some meal for Ifthar.
 
 Zimbabwe, July 19th, 2014.
-
-.. |2014-06-20 13.52.22| image:: http://theprasojos.files.wordpress.com/2014/07/2014-06-20-13-52-22.jpg?w=300
-.. |CAM01478| image:: http://theprasojos.files.wordpress.com/2014/07/cam01478.jpg?w=300
-.. |2014-06-15 17.01.26| image:: http://theprasojos.files.wordpress.com/2014/07/2014-06-15-17-01-26.jpg?w=300
-.. |CAM01484| image:: http://theprasojos.files.wordpress.com/2014/07/cam01484.jpg?w=300
-.. |2014-06-25 08.51.41| image:: http://theprasojos.files.wordpress.com/2014/07/2014-06-25-08-51-41.jpg?w=300
-.. |2014-06-21 16.19.29| image:: http://theprasojos.files.wordpress.com/2014/07/2014-06-21-16-19-29.jpg?w=300
