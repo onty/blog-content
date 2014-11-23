@@ -16,7 +16,7 @@ picture of Indonesia in some old movie, I wasn't born yet that day :p ).
 If you see the buses, the people, and how the city looks like, then you
 might end up with the same conclusion with me :D.
 
-.. figure:: https://theprasojos.files.wordpress.com/2014/07/2014-06-20-13-52-22.jpg
+.. figure:: http://theprasojos.files.wordpress.com/2014/07/2014-06-20-13-52-22.jpg
    :align: center
 
 No pic hoax ? Here's one of the picture I took during my journey from
@@ -33,7 +33,7 @@ foreigner here.
 
 Here's the bus view in Harare..
 
-.. figure:: http://theprasojos.files.wordpress.com/2014/07/cam01478.jpg>
+.. figure:: http://theprasojos.files.wordpress.com/2014/07/cam01478.jpg
    :align: center
 
 But wait, there's also tall building here in this country :). During my

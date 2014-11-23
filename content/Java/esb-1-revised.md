@@ -44,36 +44,36 @@ Lebih lanjut dijelaskan dalam halaman berikutnya, tentang konsep-konsep apa saja
 
 Gambar berikut menunjukkan lebih jelas tentang posisi ESB dan teknologi integrasi pendahulunya.
 
-![][2]
+[2]
 
 
 
 ```
-1\. Traditional EAI Brokers.
+1. Traditional EAI Brokers.
 Arsitektur EAI Broker seperti ini memiliki keunggulan dimana semua fungsi-fungsi yang disediakannya (termasuk manajemen routing dan bisnis rule) dapat diatur secara terpusat. Tetapi buku ini mengatakan bahwa arsitektur ini kurang cocok untuk level integrasi antar departemen atau unit bisnis yang berbeda. Lebih lanjut dijelaskan dalam bab 2 mengenai ini.
 
-2\. Application Server.
+2. Application Server.
 Application server dapat menghubungkan protokol-protokol yang berbeda dengan baik, namun hasilnya adalah sebuah aplikasi yang saling bergantung satu sama lain, yaitu antara integration logic dan application logic.
 
 
-3\. Message Oriented Middleware.
+3. Message Oriented Middleware.
 Menyediakan konektivitas yang baik, loosely coupled, dengan gaya asinkron, antar aplikasi. Hal ini memungkinkan beberapa aplikasi yang kecepatan responsenya berbeda, menjadi tidak saling menunggu satu sama lain. Namun, arsitektur MOM ini membutuhkan pemrograman low-level yang cukup lumayan, sehingga bisa jadi waktu development akan lama. Belum lagi masalah perbedaan fisik network yang menyebabkan beberapa infrastruktur MOM tertentu menjadi tidak bisa diandalkan.
 
 
-4\. Yang terakhir, ESB.
+4. Yang terakhir, ESB.
 Disini, kita tidak lagi bicara tentang pemrograman, tetapi lebih ke arah bagaimana sebuah service di konfigurasi. Di ESB juga terdapat pemisahan arsitektur yang jelas antara business logic(proses bisnis aplikasi) dengan integration logic(routing dan transformasi format data).
 
 
 ```
 
-![][3]
+[3]
 
 **Traditional Integration Broker Architecture**
 
 
 
 
-![][4]
+[4]
 
 **ESB Architecture**
 
