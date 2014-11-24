@@ -50,7 +50,9 @@ internet (ini yang penting buat nelpon via voip ke rumah, he he).
 Sepertinya pake speedy atau astinet.
 
 |Sebuah mobil di depan grand angkasa|
+
 |Sebuah TV layar datar di hotel grand angkasa|
+
 Selama di Medan, pagi dan siang hari dimanfaatkan untuk jalan-jalan,
 dan malamnya ? tentu saja di kantor client, he he. Ok, sekian dulu.
 Episode ke 2 adalah perjalanan ke Balikpapan. Tunggu ya....
