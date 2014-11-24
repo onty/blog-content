@@ -24,7 +24,7 @@ STATIC_PATHS = ['images']
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
+         ('Blognya TePot', 'https://vhynaulia.wordpress.com/'),
          ('Theprasojos Family', 'http://theprasojos.wordpress.com'),)
 
 # Social widget
