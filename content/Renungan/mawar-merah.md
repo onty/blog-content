@@ -1,5 +1,5 @@
 Title: Mawar Merah ...
-Date: 2007-8-9
+Date: 2005-7-9 13:15
 Tags: 
 Category: Renungan
 
@@ -32,4 +32,3 @@ tapi jangan pernah kau mampir di hatiku.....
 
 kppti again, 5th floor, ditemani slank's mawar merah......
 
-originally posted : 09/07/05 13:15

@@ -1,5 +1,5 @@
 Title: Dia...
-Date: 2007-8-9
+Date: 2004-5-16 23:03
 Tags: 
 Category: Renungan
 
@@ -46,4 +46,3 @@ me@KPPTI, 5th floor...
 bersama dinginnya AC yg kian menusuk...
 
 
-Originally posted : 16/04/05 11:03

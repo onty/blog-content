@@ -1,5 +1,5 @@
 Title: Buat hacker keadilan...
-Date: 2007-8-9
+Date: 2004-9-12 18:46
 Tags: 
 Category: Renungan
 
@@ -15,4 +15,3 @@ fase barukehidupan
 Ummat menanti
 Selamat berjuang Bro ...
 
-originally posted : 12/09/04 18:46

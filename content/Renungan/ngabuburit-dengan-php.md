@@ -1,5 +1,5 @@
 Title: Ngabuburit dengan PHP
-Date: 2007-8-9
+Date: 2004-10-4 17:49
 Tags: 
 Category: Renungan
 
@@ -13,4 +13,3 @@ Masalah lain ada pada waktu generate pdf.Kan di aplikasi web itu aku juga bikin 
 
 eh, dah dulu yak, dah buka nih....mau cari minum dulu di pantry, bye,.....
 
-Originally posted : 31/10/04 5:49

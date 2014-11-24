@@ -1,5 +1,5 @@
 Title: Tukang jual pisang goreng
-Date: 2007-6-3
+Date: 2007-5-4
 Tags: 
 Category: Renungan
 
@@ -10,5 +10,3 @@ Ok, keep fight, the solaris machine and the lucene are waiting ...
 Bismillah.
 
 
-
-originally posted 4/5/07

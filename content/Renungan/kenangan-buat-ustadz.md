@@ -1,5 +1,5 @@
 Title: Kenangan buat ustadz ...
-Date: 2007-8-9
+Date: 2005-6-15 06:32
 Tags: Renungan
 Category: Renungan
 
@@ -36,4 +36,3 @@ Ustad, semoga dirimu mendapat tempat yang layak, di sisi Allah.Amin.
 
 
 
-Originally posted : 15/06/05 6:32

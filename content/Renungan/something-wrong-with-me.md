@@ -1,5 +1,5 @@
 Title: Something wrong with me ???
-Date: 2007-8-9
+Date: 2004-9-13 21:57
 Tags: 
 Category: Renungan
 
@@ -10,4 +10,3 @@ proses kedewasaan ? semoga .....
 
 Soulmate hunting ? Maybe :)
 
-Originally posted : 13/09/04 9:57

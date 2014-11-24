@@ -1,5 +1,5 @@
 Title: Nulis Ah...
-Date: 2007-8-9
+Date: 2005-3-26 22:57
 Tags: 
 Category: Renungan
 
@@ -27,15 +27,5 @@ This night, about 10 pm, it's just me and my friend here in the office, we both 
 
 
 
-
-
-
-
-
-
-
 _from 5th floor, Indosat building, with love, passion, and tenderness..._
 
-
-
-Originally posted : 26/03/05 10:57

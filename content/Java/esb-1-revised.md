@@ -1,5 +1,5 @@
 Title: ESB #1 (Revised)
-Date: 2007-6-3
+Date: 2006-4-7
 Tags: 
 Category: Java
 
@@ -149,7 +149,6 @@ XML support. **
 An ESB can take advantage of XML as its "native" datatype.
 ```
 
-originally posted 7/4/06
 
 [1]: http://arih.wordpress.com
 [2]: http://jroller.com/resources/j/JPrasojo/Clipboard01.jpg

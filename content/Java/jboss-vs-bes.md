@@ -1,5 +1,5 @@
 Title: JBoss Vs BES
-Date: 2007-6-3
+Date: 2006-4-7
 Tags: 
 Category: Java
 
@@ -22,4 +22,3 @@ Sekilas tentang BES 6.5, nggak ada yg amazing yah, standar2 aja, masih J2EE 1.3 
 Semangat !!!
 
 
-originally posted 7/4/06

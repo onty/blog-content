@@ -1,5 +1,5 @@
 Title: Petualangan bulan ini..
-Date: 2007-8-9
+Date: 2004-8-29 00:39
 Tags: Travel
 Category: Renungan
 
@@ -14,4 +14,3 @@ Minggu ini, yang aku baru aja dateng jam 21.30 tadi, dari Yogyakarta, aslinya da
 
 Gitu aja deh, mau tidur dulu, besok ngantor pagi soalnya.
 
-Originally posted : 29/08/04 12:39

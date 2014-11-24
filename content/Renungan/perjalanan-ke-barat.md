@@ -1,5 +1,5 @@
 Title: Perjalanan Ke Barat....
-Date: 2007-8-9
+Date: 2004-9-14 12:38
 Tags: 
 Category: Renungan
 
@@ -16,4 +16,3 @@ Tapi kesibukan kuliah membuat semuanya tergilas oleh waktu.
 
 Teringat ucapan Ustadz Rofi' ...... "BERSAMA ALLOH KITA BISA !" :) so...let's fight for a better tomorrow .... :)
 
-Originally posted : 14/09/04 12:38

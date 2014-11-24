@@ -1,5 +1,5 @@
 Title: Kado buat bapak
-Date: 2007-8-9
+Date: 2005-4-16 23:02
 Tags: Family
 Category: Renungan
 
@@ -48,4 +48,3 @@ Ya Allah, ampunilah dosa-dosaku, dosa kedua orang tuaku, dan perlakukanlah merek
 
 me@my-private-room
 
-Originally posted : 16/04/05 11:02

@@ -1,5 +1,5 @@
 Title: Kru-keadilan.....last word.
-Date: 2007-8-9
+Date: 2005-6-10 04:56
 Tags: Laptop
 Category: Renungan
 
@@ -31,5 +31,3 @@ Terimakasih, atas semuanya.
 Kru-keadilan :
 
 Celeron 1,1 Ghz,512M,20Gb...
-
-Originally posted : 10/06/05 4:56

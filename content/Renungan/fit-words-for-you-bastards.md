@@ -1,5 +1,5 @@
 Title: Fit Words for you Bastards
-Date: 2007-8-9
+Date: 2004-11-11 00:16
 Tags: 
 Category: Renungan
 
@@ -9,4 +9,3 @@ Tiada kata yang tepat untuk menggambarkan perlakuan keji USA di Fallujah,IRAK ke
 
 "Terkutuklah kau pasukan hina Amerika !!! "
 
-Originally posted : 11/11/04 0:16

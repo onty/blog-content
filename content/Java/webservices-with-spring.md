@@ -1,5 +1,5 @@
 Title: Webservices with spring
-Date: 2007-6-3
+Date: 2007-4-19
 Tags: 
 Category: Java
 
@@ -35,37 +35,7 @@ I'm using AggregatedInfoJaxRpcProxyFactoryBean, this is a class that extends Jax
 
 Ok, the webservice client is done, now it's time to develop the database persistence part. I'm using Ibatis. Ibatis is cool, and I prefer this to hibernate if we need to do the complex query. In telco apps, there are no such simple query, right ? also, we need to be ready if someday the query changed, new field added, depends on requirement.
 
-The database persistence done. Now, create the ant script to run this module, since I had lots of CLASSPATH to include. I can't put it all in bash script and change all the path when it's moved out to production. So, this is my ant script :
-
-
-
-
-run
-
-
-
-
-
-
-
-
-
-
-5000
-
-
-
-172800000
-
-
-
-
-
-
-
-
-
-
+The database persistence done. Now, create the ant script to run this module, since I had lots of CLASSPATH to include. I can't put it all in bash script and change all the path when it's moved out to production. 
 
 
 And that's it, I'm done.
@@ -73,4 +43,3 @@ And that's it, I'm done.
 
 
 logger.info("from cyberjava with love....");
-Originally posted 4/19/07.

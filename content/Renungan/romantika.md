@@ -1,5 +1,5 @@
 Title: Romantika...
-Date: 2007-8-9
+Date: 2005-6-8 20:42
 Tags: 
 Category: Renungan
 
@@ -42,6 +42,3 @@ Mungkin bila hidayah itu datang....
 
 Adopted from Reza's Keajaiban....
 
-
-
-Originally posted : 08/06/05 8:42
