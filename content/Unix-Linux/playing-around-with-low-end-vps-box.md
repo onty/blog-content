@@ -31,10 +31,10 @@ Change the line using /bin/bash, into /bin/pdksh, and voillaa, next login sessio
 Not enought with just # prompt ? It's time to decorate your shell with some fancy prompts, just edit the .profile located inside the user's home directory ( just do ls -la to see it, since it's a hidden file ). Add the following line :
 
 
-```
-HOSTNAME=`hostname`
-PS1=`print "
-```
+	:::term
+	HOSTNAME=`hostname`
+	PS1=`print "
+
 
 [1]: http://www.pasarhosting.com
 [2]: https://www.vpsmart.com/clients/knowledgebase.php?action=displayarticle&id=4

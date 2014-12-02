@@ -5,9 +5,8 @@ from __future__ import unicode_literals
 AUTHOR = u'Lintang JP'
 SITENAME = u"JPrasojo's blog"
 SITEURL = ''
-THEME = "pelican-themes/bootstrap"
-#THEME = "pelican-themes/syte"
-#THEME = "pelican-themes/notmyidea-cms"
+#THEME = "pelican-themes/bootstrap"
+THEME = "pelican-themes/pelican-sober"
 PATH = 'content'
 
 TIMEZONE = 'Europe/Dublin'
