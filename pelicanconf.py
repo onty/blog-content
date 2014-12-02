@@ -6,7 +6,7 @@ AUTHOR = u'Lintang JP'
 SITENAME = u"JPrasojo's blog"
 SITEURL = ''
 #THEME = "pelican-themes/bootstrap"
-THEME = "pelican-themes/pelican-sober"
+THEME = "pelican-themes/Responsive-Pelican"
 PATH = 'content'
 
 TIMEZONE = 'Europe/Dublin'
