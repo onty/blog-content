@@ -2,7 +2,6 @@ Zimbabwe part 1..
 #################
 :date: 2014-07-19 21:13
 :author: onty
-:category: Travelling
 :tags: embassy, harare, indonesian embassy, zimbabwe
 :slug: zimbabwe-part-1
 

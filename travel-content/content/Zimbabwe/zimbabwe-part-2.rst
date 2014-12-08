@@ -2,7 +2,6 @@ Zimbabwe, part 2..
 ##################
 :date: 2014-08-02 18:13
 :author: onty
-:category: Travelling
 :slug: zimbabwe-part-2
 
 So, I always put in my pray during Ramadhan, hoping that I can spend the
