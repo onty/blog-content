@@ -24,6 +24,7 @@ STATIC_PATHS = ['images']
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
+         ('My Other Blog', 'http://blog.theprasojos.web.id/'),
          ('Blognya TePot', 'https://vhynaulia.wordpress.com/'),
          ('Theprasojos Family', 'http://theprasojos.wordpress.com'),)
 
@@ -32,6 +33,6 @@ SOCIAL = (('Twitter', 'https://twitter.com/jprasojo'),
           ('Linkedin', 'https://www.linkedin.com/in/lintangprasojo'),)
 
 DEFAULT_PAGINATION = 6
-#SITEMAP_SAVE_AS = 'sitemap.xml'
+SITEMAP_SAVE_AS = 'sitemap.xml'
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
