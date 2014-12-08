@@ -9,7 +9,7 @@ SITEURL = ''
 #THEME = "pelican-themes/Responsive-Pelican"
 THEME = "pelican-themes/pujangga"
 PATH = 'content'
-
+#DIRECT_TEMPLATES = ('index', 'tags', 'categories', 'archives', 'sitemap')
 TIMEZONE = 'Europe/Dublin'
 
 DEFAULT_LANG = u'en'
@@ -32,6 +32,6 @@ SOCIAL = (('Twitter', 'https://twitter.com/jprasojo'),
           ('Linkedin', 'https://www.linkedin.com/in/lintangprasojo'),)
 
 DEFAULT_PAGINATION = 6
-
+#SITEMAP_SAVE_AS = 'sitemap.xml'
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

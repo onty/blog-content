@@ -2,13 +2,15 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'Lintang'
-SITENAME = u'Jalan-Jalan'
+AUTHOR = u'Lintang JP'
+SITENAME = u"Jalan-jalan"
 SITEURL = ''
-
+#THEME = "pelican-themes/bootstrap"
+#THEME = "pelican-themes/Responsive-Pelican"
+THEME = "../pelican-themes/pujangga"
 PATH = 'content'
-
-TIMEZONE = 'Europe/Paris'
+#DIRECT_TEMPLATES = ('index', 'tags', 'categories', 'archives', 'sitemap')
+TIMEZONE = 'Europe/Dublin'
 
 DEFAULT_LANG = u'en'
 
@@ -18,18 +20,18 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
-
+STATIC_PATHS = ['images']
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+         ('Blognya TePot', 'https://vhynaulia.wordpress.com/'),
+         ('Theprasojos Family', 'http://theprasojos.wordpress.com'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('Twitter', 'https://twitter.com/jprasojo'),
+          ('Linkedin', 'https://www.linkedin.com/in/lintangprasojo'),)
 
-DEFAULT_PAGINATION = 10
-
+DEFAULT_PAGINATION = 6
+#SITEMAP_SAVE_AS = 'sitemap.xml'
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

@@ -10,15 +10,23 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = ''
+SITEURL = 'http://travel.theprasojos.web.id'
 RELATIVE_URLS = False
+#RELATIVE_URLS = True
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 
-DELETE_OUTPUT_DIRECTORY = True
+DELETE_OUTPUT_DIRECTORY = False
 
 # Following items are often useful when publishing
+DISQUS_SITENAME = "jprasojos"
+GOOGLE_ANALYTICS = "UA-57217271-1"
 
-#DISQUS_SITENAME = ""
-#GOOGLE_ANALYTICS = ""
+ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+
+YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
+MONTH_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/index.html'
+DAY_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/index.html'
+
