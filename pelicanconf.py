@@ -6,8 +6,8 @@ AUTHOR = u'Lintang JP'
 SITENAME = u"JPrasojo's blog"
 SITEURL = ''
 #THEME = "pelican-themes/bootstrap"
-#THEME = "pelican-themes/Responsive-Pelican"
-THEME = "pelican-themes/pelican-sober"
+THEME = "pelican-themes/clean-blog"
+#THEME = "../pelican-themes/pelican-sober"
 PELICAN_SOBER_ABOUT = "Just an ordinary telecom engineer, working for Online Charging System.."
 #PELICAN_SOBER_STICKY_SIDEBAR = True
 #BOOTSTRAP_THEME = "lovers"
@@ -35,7 +35,8 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 SOCIAL = (('Twitter', 'https://twitter.com/jprasojo'),
           ('Linkedin', 'https://www.linkedin.com/in/lintangprasojo'),)
 
-DEFAULT_PAGINATION = 6
-#SITEMAP_SAVE_AS = 'sitemap.xml'
+#DEFAULT_PAGINATION = 6
+articles_paginator = 6
+SITEMAP_SAVE_AS = 'sitemap.xml'
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
