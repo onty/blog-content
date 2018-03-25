@@ -60,7 +60,7 @@ include "/etc/bind/named.conf.local";
 include "/etc/bind/named.conf.default-zones";
 ```
 
-The first file referred to from the main *named.conf* is *named.conf.options*. This file contains the options to be configured for the running Bind9 daemon. It tells the Bind9 daemon on which interface it should listen to, where to store the bind9 cache, and where to forward any DNS query that belongs to outside our zone (here I used google's 8.8.8.8 and 8.8.4.4). It also defines the other name server in our network we would like to use as the secondary name server (on this case it's 192.168.0.59).
+The first file referred to from the main *named.conf* is *named.conf.options*. This file contains the options to be configured for the running Bind9 daemon. It tells the Bind9 daemon on which interface it should listen to, where to store the bind9 cache, and where to forward any DNS query that belongs to outside our zone (here I used google's 8.8.8.8 and 8.8.4.4). It also defines the other name server in our network we would like to use as the secondary name server (on this case it's 192.168.9.50).
 
 ```
 options {
@@ -73,8 +73,8 @@ options {
         auth-nxdomain no;    # conform to RFC1035
         listen-on-v6 { any; };
         allow-query { any; };
-        allow-transfer { 192.168.0.59; localhost; };
-        also-notify { 192.168.0.59; };
+        allow-transfer { 192.168.9.50; localhost; };
+        also-notify { 192.168.9.50; };
         recursion no;
         notify yes;
 };
@@ -82,17 +82,17 @@ options {
 
 The *allow-transfer* option controls which server that we allowed to do the full zone transfer to. And the *also-notify* option controls which server (which is the secondary name server) that the primary server should *Notify* when there are some changes in this primary name server. The secondary nameserver then will check the serial number of the record from the primary name server and then request for the incremental changes of the zone record to be added/removed on it's record, making the two name server always sync each other.
 
-The next file is */etc/named.conf.local*. This is where the zone is configured. So, I hijacked one of the domains in afraid.org called blogs.or.id and add 1 level domain above it (theprasojos), making it theprasojos.blogs.or.id.
+The next file is */etc/named.conf.local*. This is where the zone is configured. So, I hijacked one of the domains in afraid.org called blogs.or.id and add 1 level domain above it (theprasojos), making it theprasojos.com.
 
 ```
-zone "theprasojos.blogs.or.id" IN {
+zone "theprasojos.com" IN {
         type master;
-        file "/var/lib/bind/db.theprasojos.blogs.or.id";
+        file "/var/lib/bind/db.theprasojos.com";
 };
 
-zone "0.8.2.1.1.2.a.6.4.8.0.8.2.0.a.2.ip6.arpa" IN {
+zone "0.8.2.1.1.2.a.6.4.8.0.8.4.9.a.2.ip6.arpa" IN {
         type master;
-        file "/var/lib/bind/db.0.8.2.1.1.2.a.6.4.8.0.8.2.0.a.2.ip6.arpa";
+        file "/var/lib/bind/db.0.8.2.1.1.2.a.6.4.8.0.8.4.9.a.2.ip6.arpa";
 };
 ```
 
@@ -130,10 +130,10 @@ zone "255.in-addr.arpa" {
 };
 ```
 
-Now, back to our zone, theprasojos.blogs.or.id. As pointed by the second file *named.conf.local*, this is the configuration file list for our zone. Here's the content of */var/lib/bind/db.theprasojos.blogs.or.id*. I put a random content there just to protect my network :)
+Now, back to our zone, theprasojos.com. As pointed by the second file *named.conf.local*, this is the configuration file list for our zone. Here's the content of */var/lib/bind/db.theprasojos.com*. I put a random content there just to protect my network :)
 
 ```
-root@pegasus:/etc/bind# cat /var/lib/bind/db.theprasojos.blogs.or.id
+root@pegasus:/etc/bind# cat /var/lib/bind/db.theprasojos.com
 $TTL 1H
 @   IN SOA  @ lintang.jp.icloud.com. (
                 21   ; serial
@@ -141,14 +141,14 @@ $TTL 1H
                 1H  ; retry
                 3D  ; expire
                 2H )    ; minimum
-@            IN   NS     ns1.theprasojos.blogs.or.id.
-@            IN   NS     ns2.theprasojos.blogs.or.id.
-6            IN   AAAA   2a02:8084:6a21:1280:36c3:d2ff:fee4:cdf2
-ns1          IN   AAAA   2a02:8084:6a21:1280:36c3:d2ff:fee4:cdf2
-ns2          IN   AAAA   2a02:8084:6a21:1280:4ba:dd0:f892:fa91
-nightwing    IN   AAAA   2a02:8084:6a21:1280:ba27:ebff:fe40:c2e
+@            IN   NS     ns1.theprasojos.com.
+@            IN   NS     ns2.theprasojos.com.
+6            IN   AAAA   2a94:8084:6a21:1280:36c3:d2ff:fee4:cdf2
+ns1          IN   AAAA   2a94:8084:6a21:1280:36c3:d2ff:fee4:cdf2
+ns2          IN   AAAA   2a94:8084:6a21:1280:4ba:dd0:f892:fa91
+nightwing    IN   AAAA   2a94:8084:6a21:1280:ba27:ebff:fe40:c2e
 @            IN   MX     10 mail
-mail         IN   AAAA   2a02:8084:6a21:1280:36c3:d2ff:fee4:cdf2
+mail         IN   AAAA   2a94:8084:6a21:1280:36c3:d2ff:fee4:cdf2
 mail._domainkey IN      TXT     ( "v=DKIM1; k=rsa; "
           "p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPdw2AmI8Ybbj5jNpbuqEcMW0VJoh+VU1fIO6b0+Yp5HPuat/DP4YakTdnSn0alzW0OpaFYdgj4ztTg/2NGzIqjHmDrrHUaw+Z6PsZaTT8UvG+R1icT5A8xH57xgU9yCaZdZQ4ZTs2IcFjajHvdzHNqYRFdlHf+c9aZpUC7B0+yQIDAQAB" )
 @            IN   TXT    "v=spf1 mx -all"
@@ -161,7 +161,7 @@ Now, it happens that my ISP only grants a bunch of world-routable IPv6 to me, so
 And finally below is the reverse zone record that I have. Again, since I only have IPv6 allocation, the content looks weird, but hey, it worked perfectly :)
 
 ```
-root@pegasus:/etc/bind# cat /var/lib/bind/db.0.8.2.1.1.2.a.6.4.8.0.8.2.0.a.2.ip6.arpa
+root@pegasus:/etc/bind# cat /var/lib/bind/db.0.8.2.1.1.2.a.6.4.8.0.8.4.9.a.2.ip6.arpa
 $TTL 1H
 @   IN SOA  @ lintang.jp.icloud.com. (
                 21   ; serial
@@ -169,13 +169,13 @@ $TTL 1H
                 1H  ; retry
                 3D  ; expire
                 2H )    ; minimum
-@       IN   NS     ns1.theprasojos.blogs.or.id.
-@       IN   NS     ns2.theprasojos.blogs.or.id.
+@       IN   NS     ns1.theprasojos.com.
+@       IN   NS     ns2.theprasojos.com.
 
-2.f.d.c.4.e.e.f.f.f.2.d.3.c.6.3    IN    PTR    ns1.theprasojos.blogs.or.id.
-2.f.d.c.4.e.e.f.f.f.2.d.3.c.6.3    IN    PTR    mail.theprasojos.blogs.or.id.
-1.9.a.f.2.9.8.f.0.d.d.0.a.b.4.0    IN    PTR    ns2.theprasojos.blogs.or.id.
-e.2.c.0.0.4.e.f.f.f.b.e.7.2.a.b    IN    PTR    nightwing.theprasojos.blogs.or.id.
+2.f.d.c.4.e.e.f.f.f.2.d.3.c.6.3    IN    PTR    ns1.theprasojos.com.
+2.f.d.c.4.e.e.f.f.f.2.d.3.c.6.3    IN    PTR    mail.theprasojos.com.
+1.9.a.f.2.9.8.f.0.d.d.0.a.b.4.0    IN    PTR    ns2.theprasojos.com.
+e.2.c.0.0.4.e.f.f.f.b.e.7.2.a.b    IN    PTR    nightwing.theprasojos.com.
 
 ```
 
@@ -185,15 +185,15 @@ Now it's time to test it. The DNS propagation will take some time. I used the to
 
 We can also test it from console. See below result :
 ```
-$ dig -t ns +noall +answer theprasojos.blogs.or.id 8.8.8.8
-theprasojos.blogs.or.id. 3424	IN	NS	ns2.theprasojos.blogs.or.id.
-theprasojos.blogs.or.id. 3424	IN	NS	ns1.theprasojos.blogs.or.id.
+$ dig -t ns +noall +answer theprasojos.com 8.8.8.8
+theprasojos.com. 3424	IN	NS	ns2.theprasojos.com.
+theprasojos.com. 3424	IN	NS	ns1.theprasojos.com.
 ```
 
 And for the aaaa record :
 ```
-$ dig -t aaaa +noall +answer 6.theprasojos.blogs.or.id 8.8.4.4
-6.theprasojos.blogs.or.id. 3518	IN	AAAA	2a02:8084:6a21:1280:36c3:d2ff:fee4:cdf2
+$ dig -t aaaa +noall +answer www.theprasojos.com 8.8.4.4
+www.theprasojos.com. 3518	IN	AAAA	2a94:8084:6a21:1280:36c3:d2ff:fee4:cdf2
 ```
 
 And so on, so forth :)
