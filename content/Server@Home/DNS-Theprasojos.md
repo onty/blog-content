@@ -1,9 +1,9 @@
 Title: DNS Setup for Theprasojos in Ubuntu@Pine64
 Date: 2018-03-25
-Tags: aTutor Unix Linux Bind Server Internet Named
+Tags: Unix Linux Bind Server Internet Named
 Category: Server@Home
 
-Long time I have not write on this blog, mostly because I can't remember how to configure the pelican in my mac (yeah, this blog uses pelican generator for html content, bye bye Wordpress, I guess you are no longer impress everyone by now). And luckily this blog's content is stored in github, making me easier to pull the content back. After some googling with keyword = 'pelican', I manage to get the set up back up and running.
+Long time I have not write on this blog, mostly because I can't remember how to configure the pelican in my mac (yeah, this blog uses pelican generator for html content, bye bye Wordpress, I guess you are no longer impress everyone by now). And luckily this blog's content is stored in a repos, making me easier to pull the content back. After some googling with keyword = 'pelican', I manage to get the set up back up and running.
 
 Now, the problem is my ego :p, with hi-speed broadband, unlimited, and IPv6 allocation, sometime I felt so ashamed if I don't have my own server kingdom. Paying AWS just for playing around is just too much. At home I have my Pine64, several Raspberry Pi, all of them lying around without any use, so that's why I decided to host my own DNS, mail server, and of course, this blog. Problem with the blog is that, since I put it under IPv6 range, then the web client should also have IPv6. Well ok, I don't have lots of requirements for the webserver since I use pure HTML. So I put the mirror on other place as well, no big deal, as long as they can server HTML, fine for me. Hence you can read this blog from http://onty.maclab.org too. This post will not cover the concept on how DNS works, but this is rather just me, sharing how my server is configured, that's all.
 
