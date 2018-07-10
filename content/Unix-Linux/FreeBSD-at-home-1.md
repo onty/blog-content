@@ -1,7 +1,7 @@
 Title: FreeBSD at home (1)
 Date: 2018-06-19
 Tags: Unix Linux
-Category: Unix Linux
+Category: Unix Linux, Server@Home
 
 
 So, this past few weeks I have been playing around with FreeBSD. Been trying to replace the Raspbian OS for my Pine64 and Raspberry Pi 1 B. End up compiling the FreeBSD source for Pine64 since those img files provided by raspbsd.org doesn't seem stable, and obviously outdated. I used Google's cloud based instance with Intel processor and 2 GB of RAM., fetched the sources r335557 from svn, and voilla, this is what I ended up with :
