@@ -14,4 +14,4 @@ https://www.slashorg.net/read-141-IPv6-routing-using-FreeBSD.html
 
 First is to figure out the network diagram. Currently I have a fiber modem that also acts as a router and DHCPv4 server. This is pretty much a normal setup for everyone with internet home connectivity. I don't see any IPv6 setup related there, so quick assumption, it doesn't support IPv6. But it's ok, I just need the IPv4 tunnel to be passed through to it, nothing IPv6 specific I expected this modem to do anyway. Also, the idea after setting up this tunnel is that, it should also act as a IPv6 gateway for the other devices that I have at home. So yeah, the end goal will be IPv6 for all home devices.
 
-![Home IPv6 network plan]({filename}/images/Matoa-IPv6 for Home.png)
+![Home IPv6 network plan]({filename}/images/IPv6-Matoa.png)
