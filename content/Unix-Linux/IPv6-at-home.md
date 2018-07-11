@@ -1,4 +1,4 @@
-Title: IPv6 Setup for Home Network
+Title: FreeBSD at Home (2) : IPv6 Setup for Home Network
 Date: 2018-07-01
 Tags: Unix Linux
 Category: Unix/Linux
