@@ -18,7 +18,7 @@ Lalu bagaimana dengan Online Charging System ? ya tentu saja sesuai namanya, 'On
 
 
 <strong>1\. Realtime rating</strong>
-Masih ingat apa itu rating ? Yak, di artikel yang duluuu banget tentang Billing ( cari sendiri ya, belum tau caranya refer link di halaman yg sama pake markdown :p) yaitu proses untuk menentukan cost dari sebuah event. Nah, karena realtime, maka semua parameter yang dibutuhkan untuk menentukan cost tsb ya harus tersedia saat itu juga..nah, ini bedanya sama Billing, dan ini salah satu yang bikin mereka bisa co-exist :). 
+Masih ingat apa itu rating ? Yak, di artikel yang duluuu banget tentang Billing ( cari sendiri ya, belum tau caranya refer link di halaman yg sama pake markdown :p) yaitu proses untuk menentukan cost dari sebuah event. Nah, karena realtime, maka semua parameter yang dibutuhkan untuk menentukan cost tsb ya harus tersedia saat itu juga..nah, ini bedanya sama Billing, dan ini salah satu yang bikin mereka bisa co-exist :).
 
 Contohnya untuk menentukan cost dari sebuah voice call antar operator pada jam tertentu misalnya. Berikut parameter realtime yang harus ada dan akan dibutuhkan kira-kira seberti berikut :
 
@@ -27,11 +27,11 @@ Contohnya untuk menentukan cost dari sebuah voice call antar operator pada jam t
 - Called Number ( sering disebut B#, B party, etc), buat nentuin tujuan nelponnya kemana. Kalo sesama operator biasanya gratis atau lebih murah daripada nelpon ke beda operator kan ? Trus kalo yang sering nelpon ke nomer premium, pasti tarifnya beda juga kan ? :)
 - Location Information, kalo di spek 3GPP disebut locationNumber, berupa angka tertentu yang menunjukkan lokasi A# saat melakukan panggilan. Biasanya dipakai untuk menggabungkan beberapa cell-id menjadi satu. Kenapa harus digabungin ? ya bayangin aja, operator gede BTS nya sampe puluhan ribuan, masing-masing BTS biasanya punya 3 cell-id, mabok dah kalo yang dijadiin parameter buat Rating nya cell-id :D. Dari parameter ini juga ketauan, pas lagi nelpon ini lagi di Home Network ( dalam negeri biasanya ), atau lagi Roaming di luar negeri.
 - Calling Time, waktu dimana event itu terjadi. Dari MSC biasanya dalam millisecond, tapi operator berhak rounding dong ke second terdekat ;)
-- Faktor lain, misal: Sisa Bonus, daftar paket promo apa nggak 
+- Faktor lain, misal: Sisa Bonus, daftar paket promo apa nggak
 ```
 
 <strong>2\. Realtime charging</strong>
-Nah, setelah costnya berhasil ditentukan, tinggal ngurangin pulsa deh, secara realtime. Jadi begitu voice call selesai ditutup, langsung cek pulsa, keliatan deh sisa pulsa tinggal berapa, ga perlu nunggu sebulan pas billingnya keluar :) 
+Nah, setelah costnya berhasil ditentukan, tinggal ngurangin pulsa deh, secara realtime. Jadi begitu voice call selesai ditutup, langsung cek pulsa, keliatan deh sisa pulsa tinggal berapa, ga perlu nunggu sebulan pas billingnya keluar :)
 
 <strong>3\. Realtime balance management</strong>
 Balance management ini termasuk didalamnya manajemen sisa pulsa :D. Tau kan, jaman sekarang pake smartphone, data nyala terus, sambil kirim sms, pulsa habis, trus pelanggan isi ulang dan ngecek sisa pulsanya. Nah, ada duit masuk, duit keluar, dan bisa jadi menuju ke 'dompet pulsa' yang sama. Ini maksudnya balance management.
@@ -53,7 +53,7 @@ Kalo ini sepertinya udah jelas ya, OCS juga merupakan sumber digalinya laporan k
 <strong>5\. Centralized Subscriber and QoS storage</strong>
 Nah, ini fungsi terbaru OCS yang paling keren di era Broadband. Yak, OCS juga bisa memberikan data mengenai QoS yang seharusnya dimiliki oleh pelanggan. Misal, seorang pelanggan A berlangganan paket data yang paling murah, seribu perak seharian, internet unlimited. Lalu ada pelanggan B, berlangganan paket data premium 500 ribu perak sebulan. Nah, karena OCS memaintain data paket apa saja yang dimiliki pelanggan, maka OCS juga merupakan sumber informasi QoS apa yang seharusnya diberikan pada pelanggan. Untuk pelanggan premium, tentu sudah seharusnya mendapat QoS paling tinggi, wajar karena dia bayar mahal untuk paket datanya. Nah, informasi QoS ini akan diberikan oleh OCS melalui sebuah protokol yang baru di sahkan oleh 3GPP, namanya Sy. Lebih lanjut tentang protokol charging di bagian ke 2 ya. Intinya, informasi QoS profile akan di feed oleh OCS ke PCRF, yang akan menerima query dari PCEF tentang QoS profile apa yang seharusnya di apply untuk tiap pelanggan.
 
-Lho, ngapain harus lewat PCRF, kenapa PCEF nggak langsung nanya ke OCS kalo gitu, daripada harus lewat calo dulu kan ? :D. Ya bisa juga sih, spek 3GPP memungkinkan PCEF mengirim protokol Gx ke either PCRF atau OCS langsung (kalau OCS nya support). Masalahnya arsitektur yang terlanjur berkembang untuk paket data adalah, terpisahnya database pelanggan dan database QoS paket data. Arsitektur yang umum ( karena network operator biasanya adalah evolusi dari 2G, 3G, ke 4G ) yaitu database QoS ditaruh di PCRF, dan database pelanggan(account dan balance) berada di OCS. Nah untuk menyatukan data pelanggan ini, dan juga agar ketika mendaftarkan paket data tidak perlu mendaftarkan ke 2 tempat (OCS dan PCRF), maka arsitektur yang baru dikembangkan adalah, data pelanggan akan dimaintain di OCS, dan PCRS akan menggunakan protokol Sy untuk mengambil data QoS dari OCS, dan mengapply nya via PCEF. 
+Lho, ngapain harus lewat PCRF, kenapa PCEF nggak langsung nanya ke OCS kalo gitu, daripada harus lewat calo dulu kan ? :D. Ya bisa juga sih, spek 3GPP memungkinkan PCEF mengirim protokol Gx ke either PCRF atau OCS langsung (kalau OCS nya support). Masalahnya arsitektur yang terlanjur berkembang untuk paket data adalah, terpisahnya database pelanggan dan database QoS paket data. Arsitektur yang umum ( karena network operator biasanya adalah evolusi dari 2G, 3G, ke 4G ) yaitu database QoS ditaruh di PCRF, dan database pelanggan(account dan balance) berada di OCS. Nah untuk menyatukan data pelanggan ini, dan juga agar ketika mendaftarkan paket data tidak perlu mendaftarkan ke 2 tempat (OCS dan PCRF), maka arsitektur yang baru dikembangkan adalah, data pelanggan akan dimaintain di OCS, dan PCRS akan menggunakan protokol Sy untuk mengambil data QoS dari OCS, dan mengapply nya via PCEF.
 
 Dapet gambar yang bagus nih di salah satu white paper nya vendor OCS terkemuka.
 
@@ -64,5 +64,6 @@ Udah pusing? berasa mbulet ? Silakan tinggalkan komentar. Kalau ada yang dirasa 
 
 Lanjut ke part 2 yah, protokol standar apa aja yang disupport oleh -kebanyakan- Online Charging System :)
 
-Cheers.
+> To be continued..
 
+Cheers.
