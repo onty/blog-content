@@ -1,6 +1,6 @@
 Title: Telco Billing #2, Interconnect that matters...
 Date: 2009-1-13
-Tags: 
+Tags:
 Category: Telco
 
 Ok, sekarang penentuan tarif interkoneksi.
@@ -23,4 +23,4 @@ Billing interkoneksi ( billing antar operator ) :
 
 Lalu bagaimana dengan tariff interkoneksi untuk internasional call ( SLI ) ? Seperti yang kita ketahui, kini ada 3 operator yang memiliki lisensi untuk SLI ini, Telkom, Indosat, dan BTel. Artinya, mau tidak mau, operator yang ada haruslah memiliki perjanjian transit dengan salah satu dari 3 operator ini. Dari sini, tariffnya adalah tariff per-negara. Dan biasanya, operator-operator yang lain tinggal membundling tariff SLI dari operator pemilik lisensi SLI ini, ke dalam tariff retail mereka, dan sistemnya adalah komisi. Biaya interkoneksi dibayarkan penuh, namun untuk tiap panggilan yang melewati sistem interkoneksi operator pemilik lisensi SLI tadi, operator pemanggil akan mendapatkan komisi, yang besarnya tentu saja tergantung dari volume traffik yang dilewatkan. Begitu juga dengan panggilan masuk dari luar negeri. Trafficnya juga hanya bisa melalui 3 operator SLI tadi, dan tariffnya tergantung perjanjian antara operator SLI dengan operator penerima panggilan yang sebenarnya.
 
-Kira-kira demikianlah proses interkoneksi. Mungkin di lain kesempatan akan dibahas tentang billing retail. Any comments ? please wrote it down.
+Kira-kira demikianlah proses interkoneksi. Mungkin di lain kesempatan akan dibahas tentang billing retail. Any comments ? Please write it down.
