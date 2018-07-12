@@ -16,10 +16,27 @@ Yakk, balik ke topik (enak juga ngetik di vim ternyata ya), lancar jaya. Jadii, 
 
 Lalu bagaimana dengan Online Charging System ? ya tentu saja sesuai namanya, 'Online', berarti harus On terus, dan realtime. Online Charging System (kita singkat OCS aja ya) dalam hal ini secara simplenya bertugas melakukan fungsi Rating secara online dan realtime. Berikut kira-kira list lengkap fungsi dari OCS :
 
-## 0. Subscriber database
+## 1. Subscriber database
+Kalau ini jelas. OCS memiliki database tersendiri dimana didalamnya terdapat data pelanggan (kalo nggak, gimana mau melakukan fungsi 2-3-4 dibawah ini kan ?). Sebenarnya OCS bukan satu-satunya node yang menyimpan data pelanggan. Banyak node lain di dalam sistem telekomunikasi yang juga menyimpan data pelanggan sesuai dengan keperluan dan kepentingannya masing-masing. Data pelanggan yang ada disimpan oleh OCS lebih spesifiknya adalah sebagai berikut:
+- MSISDN (nomor pelanggan), terkadang juga IMSI ( ID pengenal pelanggan yang dikenali oleh system)
+- Subscriber balance and account (sisa pulsa dan quota pelanggan)
+- List Promo/Offering yang sedang di subscribe saat ini
+- Informasi tanggal aktif pertama kali, dan masa aktif pelanggan tersebut.
+- Informasi lain-lain tentang pelanggan yang berkaitan dengan logic yang akan digunakan untuk realtime rating (misal, tanggal lahir, bonus/loyalty point, flag untuk pelanggan-pelanggan khusus/VIP agar dapat menerima QoS/layanan yang berbeda, etc).
 
+Coba kita bandingkan item diatas dengan data mengenai pelanggan yang disimpan oleh Billing System dan CRM (Customer Relationship Management) system yang kira-kira sebagai berikut :
+- Nama dan alamat pelanggan, tempat tanggal lahir
+- Nomer KTP/ID pengenal lainnya
+- Nomer kontak pelanggan (PSTN, nomer seluler lain, dsb)
+- List promo yang sedang di prospek ke pelanggan
+- Hierarki data pelanggan (jika pelanggan tersebut adalah bagian dari sebuah company besar misalnya, dengan pengelompokan data tiap divisi di perusahaan tersebut)
+- dan lain-lain data yang berhubungan dengan penagihan billing ke pelanggan.
 
-## 1. Realtime rating
+Lalu kita bandingkan juga dengan data pelanggan yang disimpan di network element seperti HLR (Home Location Register), dan PCRF (Policy Control and Rating Function), yang kira-kira sebagai berikut :
+- IMSI, MSISDN dan QoS yang dimiliki pelanggan
+- Data service/layanan apa saja yang aktif dan tidak aktif untuk pelanggan tersebut (misal, pelanggan tersebut diperbolehkan untuk melakukan panggilan suara saja, namun tidak bisa melakukan sms outgoing, dsb)
+
+## 2. Realtime rating
 Masih ingat apa itu rating ? Yak, di artikel yang duluuu banget tentang Billing ( cari sendiri ya, belum tau caranya refer link di halaman yg sama pake markdown :p) yaitu proses untuk menentukan cost dari sebuah event. Nah, karena realtime, maka semua parameter yang dibutuhkan untuk menentukan cost tsb ya harus tersedia saat itu juga..nah, ini bedanya sama Billing, dan ini salah satu yang bikin mereka bisa co-exist :).
 
 Contohnya untuk menentukan cost dari sebuah voice call antar operator pada jam tertentu misalnya. Berikut parameter realtime yang harus ada dan akan dibutuhkan kira-kira seberti berikut :
@@ -32,10 +49,10 @@ Contohnya untuk menentukan cost dari sebuah voice call antar operator pada jam t
 - Faktor lain, misal: Sisa Bonus, daftar paket promo apa nggak
 ```
 
-## 2. Realtime charging
+## 3. Realtime charging
 Nah, setelah costnya berhasil ditentukan, tinggal ngurangin pulsa deh, secara realtime. Jadi begitu voice call selesai ditutup, langsung cek pulsa, keliatan deh sisa pulsa tinggal berapa, ga perlu nunggu sebulan pas billingnya keluar :)
 
-## 3. Realtime balance management
+## 4. Realtime balance management
 Balance management ini termasuk didalamnya manajemen sisa pulsa :D. Tau kan, jaman sekarang pake smartphone, data nyala terus, sambil kirim sms, pulsa habis, trus pelanggan isi ulang dan ngecek sisa pulsanya. Nah, ada duit masuk, duit keluar, dan bisa jadi menuju ke 'dompet pulsa' yang sama. Ini maksudnya balance management.
 
 Nah, selain fungsi dasar diatas, biasanya OCS juga bisa melakukan hal-hal sbb:

@@ -10,7 +10,11 @@ $ uname -a
 FreeBSD pegasus.theprasojos.id 12.0-CURRENT FreeBSD 12.0-CURRENT #0 r335557: Sat Jun 23 05:15:53 UTC 2018     root@freebsd-11-1-taiwan.c.theprasojos-ie.internal:/home/lintang_prasojo/crochet/work/obj/usr/src/arm64.aarch64/sys/GENERIC
 ```
 
-Before spinning up a GCP instance, I tried to compile the source using the FreeBSD installed in the Pine64 itself. I was thinking there was no need to do a cross-source compilation for this since I believe Pine64 itself is enough ( 4 processors, 2 GB RAM, Gigabit Interface, plus un-stable FreeBSD img :p ). All of the 4 CPU always reached 100% (see below image), and I always end up getting weird error. So I decided, lets spin up a GCP instance and try to use the Free Credit I have :D
+Before spinning up a GCP instance, I tried to compile the source using the FreeBSD installed in the Pine64 itself. I was thinking there was no need to do a cross-platform compilation for this board since I believe Pine64 itself is enough ( 4 processors, 2 GB RAM, Gigabit Interface, plus un-stable FreeBSD img :p ). All of the 4 CPU always reached 100% (see below image), and I always end up getting weird error. So I decided, lets spin up a GCP instance and try to use the Free Credit I have :D
+
+<p align="center">
+<img width="300" height="320" src="{filename}/images/cpu.jpg"/>
+</p>
 
 Anyway, long story short. That was the attempt for Pine64 on FreeBSD. I plan to use this board as IPv6 gateway among other things (it will be my next post).
 I then continued with my other board, RPI1-B. My initial intention was to replace the Raspbian OS that holds the installation for my web cameras to FreeBSD. Of course, driver issue for the camera was the most annoying problem at the beginning, since FreeBSD only detected my Logitech webcam as ugen0.x device. For this board, I did not compile the source using crochet, but instead I used the 12-Current *r335760* version (well, actually I also tried 11-2 Release and 11-2 Stable too, but somehow the *cuse4bsd*, *webcamd*, and *Motion* did not work well together, my webcam did not detected properly, hence the 12-Current).
@@ -86,11 +90,19 @@ root@phoenix:~ # webcamd -d ugen0.6 -i 0 -v 0   ==> this will create /dev/video0
 root@phoenix:~ # webcamd -d ugen0.4 -i 0 -v 1   ==> this will create /dev/video1
 ```
 
-The order of which ugen0 device that should be /dev/video0 or /dev/video1 doesn't matter for me. It will then be handled by *Motion* software anyway.
+The order of which ugen0 device that should be /dev/video0 or /dev/video1 doesn't matter for me. It will then be handled by *Motion* software anyway. Here's how the webcamd daemon will run in the background after creating /dev/videoX.
+```
+$ ps auxw| grep -i webcamd
+root  473 10.5  1.6 12708  7952  -  S<s  02:48   2:02.86 /usr/local/sbin/webcamd -i 0 -d ugen0.6 -B -U webcamd -G webcamd
+root  424  8.1  1.7 13132  8444  -  S<s  02:48   1:39.46 /usr/local/sbin/webcamd -i 0 -d ugen0.4 -B -U webcamd -G webcamd
 
+$ ls -ltra /dev/video*
+crw-rw-rw-  1 webcamd  webcamd  0x6c Jun  9 02:48 /dev/video0
+crw-rw-rw-  1 webcamd  webcamd  0x6d Jun  9 02:48 /dev/video1
+```
 
-That's it. The webcam is now ready to be used by *Motion*, so next is the *Motion* software configuration which I will not cover on this post.
+That's it. The webcam is now ready to be used by *Motion*, so next is the *Motion* software configuration which I will not cover on this post. Just point the *motion* configuration into /dev/video0 and /dev/video1 on this case.
 
-Few things I noted after running FreeBSD in Pine64 and RPI1B. Those RPI1B 12-Current seems a bit lagging after cuse, webcamd, and motion was installed. I either suspect the SDCard, or the CPU specs of RPI1B. But then, this lagging problem remains even after I replaced the SDCard with the new one, while the RAM utilisation it self was low, never reach more than 128MB (RPI1B has 512MB RAM). On the other hand, I observed that sometimes the CPU spikes until 100%. This high CPU utilisation seem to affect the connectivity. I can see that the USB Camera is still working ( the light was On), but I could not reach/ssh the RPI. At this point after several time testing, I decided to switch back to Raspbian for my RPI1B.
+Also, few things I noted after running FreeBSD in Pine64 and RPI1B. Those RPI1B 12-Current seems a bit lagging after cuse, webcamd, and motion was installed. I either suspect the SDCard, or the CPU specs of RPI1B. But then, this lagging problem remains even after I replaced the SDCard with the new one, while the RAM utilisation it self was low, never reach more than 128MB (RPI1B has 512MB RAM). On the other hand, I observed that sometimes the CPU spikes until 100%. This high CPU utilisation seem to affect the connectivity. I can see that the USB Camera is still working ( the light was On), but I could not reach/ssh the RPI. At this point after several time testing, I decided to switch back to Raspbian for my RPI1B.
 
 How about the Pine64 FreeBSD ? until the next post... :)
