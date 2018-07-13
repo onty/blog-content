@@ -37,6 +37,7 @@ I started the setup by creating a new tunnel in my HE tunnelbroker account. Ther
 </p>
 
 Here's what I setup in my rc.conf to build the HE IPv6 tunnel:
+
 ```
 ipv6_activate_all_interfaces=YES
 cloned_interfaces="gif0"
@@ -49,6 +50,7 @@ ipv6_gateway_enable="YES"
 ```
 
 My Pine64 network interface was detected as *awg0* by FreeBSD. The tunnel interface itself is *gif0*. First try is to ping an IPv6 address from this gateway.
+
 ```
 $ ping6 ipv6.google.com
 PING6(56=40+8+8 bytes) xxxx:yyyy:zzzz:355::2 --> 2404:6800:4003:c04::65
@@ -62,6 +64,7 @@ Now, the next thing is to configure the rest of the home network to be able to g
 The software I used is *rtadvd* which comes as a basic package in FreeBSD. This software supposed to advertise the IPv6 address assignment and routing towards my local network.
 
 To setup the IPv6 address and routing advertisement, the following also required in */etc/rtadvd.conf*.
+
 ```
 awg0:\
 	:addrs#1:addr="xxxx:yyyy:zzzz:358::":\
@@ -84,6 +87,7 @@ Just to make sure, I rebooted the gateway. I also did some tcpdump to see what a
 </p>
 
 Then after that, obviously go to one of the client machine, e.g your mac or your linux (or windows, whatever) and perform the following configuration below before pinging some IPv6 address like www.v6.facebook.com from there.
+
 - Linux
 
 Set the following parameter, you can put it on sysctl.conf to make it survive after reboot.
@@ -122,4 +126,10 @@ default via fe80::ba:22ff:fea0:5651 dev wlan0 proto ra metric 1024  expires 1518
 default via fe80:ffff:ffff:ffff:ffff::1 dev wlan0 proto ra metric 1024  expires 1518sec mtu 1472 hoplimit 64 pref medium
 ```
 
-I called this *the poorman's switch hacks*.
+> I called this *the poorman's switch hacks*.
+
+Now all devices at my home (except those Android mobile phone) is using IPv6.
+
+<p align="center">
+<img width="300" height="350" src="{filename}/images/WhatIs.png"/>
+</p>
