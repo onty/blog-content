@@ -131,5 +131,5 @@ default via fe80:ffff:ffff:ffff:ffff::1 dev wlan0 proto ra metric 1024  expires 
 Now all devices at my home (except those Android mobile phone) is using IPv6.
 
 <p align="center">
-<img width="300" height="350" src="{filename}/images/WhatIs.png"/>
+<img width="300" height="350" src="{filename}/images/WhatIs.jpg"/>
 </p>
