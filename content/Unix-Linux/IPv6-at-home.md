@@ -57,7 +57,7 @@ PING6(56=40+8+8 bytes) xxxx:yyyy:zzzz:355::2 --> 2404:6800:4003:c04::65
 ```
 
 Looks good ! My gateway can ping the other IPv6 address out there. Hello World6!
-Now, the next thing is to configure the rest of the home network to be able to get IPv6 address too.
+Now, the next thing is to configure the rest of the home network to be able to get IPv6 address too. This is where SLAAC comes into play.
 
 The software I used is *rtadvd* which comes as a basic package in FreeBSD. This software supposed to advertise the IPv6 address assignment and routing towards my local network.
 
@@ -111,3 +111,15 @@ If the ping still failed from the client, there might be something wrong with th
 <p align="center">
 <img width="500" height="350" src="{filename}/images/router-adv.png"/>
 </p>
+
+Yeah, I forgot that my switch is actually not-so-dummy switch. Instead it was actually modem/router from different ISP of which I already terminate the contract but they did not want their CPE back, so I used them as *dummy switch*. This *switch* turns out has the capability to support IPv6 by broadcasting their own Router Solicitation message. It broadcasts their own configured gateway fe80::1 into the network, making all the devices in the network to accept this address as their default IPv6 gateway. Now, the worst part, I can't seem to disable it :D. So, I decided to put a dirty hacks by changing the address fe80::1 into something *bigger* than the local-link address of my IPv6 tunnel gateway. I set it to fe80:ffff:ffff:ffff:ffff::1 :D. Here's the routing list shown in one of the IPv6 client after the changes was made.
+
+```
+pi@ebookserver:~ $ ip -6 route show
+2001:470:36:9c8::/64 dev wlan0 proto kernel metric 256  expires 2591718sec pref medium
+fe80::/64 dev wlan0 proto kernel metric 256  pref medium
+default via fe80::ba:22ff:fea0:5651 dev wlan0 proto ra metric 1024  expires 1518sec hoplimit 64 pref medium
+default via fe80:ffff:ffff:ffff:ffff::1 dev wlan0 proto ra metric 1024  expires 1518sec mtu 1472 hoplimit 64 pref medium
+```
+
+I called this *the poorman's switch hacks*.
