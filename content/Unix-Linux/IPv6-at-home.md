@@ -11,7 +11,9 @@ Anyway, back to the topic. I have to be in Indonesia for quite some time, and in
 <img width="300" height="350" src="{filename}/images/sage.jpg"/>
 </p>
 
-Now I can't reach my board in Dublin from Jakarta because of this, unless I setup the IPv6 cloud in at premise in Jakarta too. Then I stumbled upon the tunnel broker feature from HE. It's basically provides the tunnel mechanism from IPv4 to IPv6. This is a perfect fit for my needs, and I was thinking that doing this with FreeBSD might be just the challenge I need. I began my search in google, and stumbled upon these URL's that helped me a lot to understand what needs to be done.
+Now I can't reach my board in Dublin from Jakarta because of this, unless I setup the IPv6 cloud at my premise in Jakarta too. Then I stumbled upon the tunnel broker feature from HE. It basically provides the tunnel mechanism from IPv4 to IPv6. This is a perfect fit for my needs, and I was thinking that doing this with FreeBSD might be just the challenge I need. I began my search in google, and stumbled upon these URL's that helped me a lot to understand what needs to be done.
+
+[https://www.freebsd.org/doc/handbook/network-ipv6.html](https://www.freebsd.org/doc/handbook/network-ipv6.html)
 
 [https://www.sixxs.net/faq/connectivity/?faq=usingsubnet&os=kame.host](https://www.sixxs.net/faq/connectivity/?faq=usingsubnet&os=kame.host)
 
@@ -21,7 +23,8 @@ Now I can't reach my board in Dublin from Jakarta because of this, unless I setu
 
 [https://www.slashorg.net/read-141-IPv6-routing-using-FreeBSD.html](https://www.slashorg.net/read-141-IPv6-routing-using-FreeBSD.html)
 
-First is to figure out the network diagram. Currently I have a fiber modem that also acts as a router and DHCPv4 server. This is pretty much a normal setup for everyone with internet home connectivity. I don't see any IPv6 setup related there, so quick assumption, it doesn't support IPv6. But it's ok, I just need the IPv4 tunnel to be passed through to it, nothing IPv6 specific I expected this modem to do anyway. Also, the idea after setting up this tunnel is that, it should also act as a IPv6 gateway for the other devices that I have at home. So yeah, the end goal will be IPv6 for all home devices with minimum changes on the current IPv4 network setup. This means for all IPv4 related (gateway/router, DHCPv4 server), existing node must be kept as is, while introducing the IPv6 layers on top of it seamlessly. Later I came to know that this decision might have some consequences, especially the default gateway assignment setup for each IPv6 client node. I will highlight this later.
+
+First is to figure out the network diagram. Currently I have a fiber modem that also acts as a router and DHCPv4 server. This is pretty much a normal setup for everyone with internet home connectivity. I don't see any IPv6 setup related there, so quick assumption, it doesn't support IPv6. But it's ok, I just need the IPv4 tunnel to be passed through to it, nothing IPv6 specific I expected this modem to do anyway. Also, the idea after setting up this tunnel is that, it should also act as a IPv6 gateway for the other devices that I have at home. So yeah, the end goal will be IPv6 for all home devices with minimum changes on the current IPv4 network setup. This means for all IPv4 related (gateway/router, DHCPv4 server), existing node must be kept as is, while introducing the IPv6 layers on top of it seamlessly.
 
 <p align="center">
 <img src="{filename}/images/Matoa-IPv6-2.png"/>
@@ -43,20 +46,68 @@ ifconfig_awg0_ipv6="inet6 [first address of routed /48 (::1) ] prefixlen 64"
 ifconfig_gif0_ipv6="inet6 [client ipv6 address] [server ipv6 address] prefixlen 128"
 ipv6_defaultrouter="-interface gif0"
 ipv6_gateway_enable="YES"
-rtadvd_enable="YES"             # let our LAN know the IPv6 default route
-rtadvd_interfaces="awg0"      
 ```
 
-My Pine64 network interface was detected as *awg0* by FreeBSD. The tunnel interface itself is *gif0*. There I also utilise *rtadvd* which comes as a basic package in FreeBSD to advertise the IPv6 address assignment and routing towards my local network.
+My Pine64 network interface was detected as *awg0* by FreeBSD. The tunnel interface itself is *gif0*. First try is to ping an IPv6 address from this gateway.
+```
+$ ping6 ipv6.google.com
+PING6(56=40+8+8 bytes) xxxx:yyyy:zzzz:355::2 --> 2404:6800:4003:c04::65
+16 bytes from 2404:6800:4003:c04::65, icmp_seq=0 hlim=45 time=485.395 ms
+16 bytes from 2404:6800:4003:c04::65, icmp_seq=1 hlim=45 time=486.170 ms
+```
+
+Looks good ! My gateway can ping the other IPv6 address out there. Hello World6!
+Now, the next thing is to configure the rest of the home network to be able to get IPv6 address too.
+
+The software I used is *rtadvd* which comes as a basic package in FreeBSD. This software supposed to advertise the IPv6 address assignment and routing towards my local network.
 
 To setup the IPv6 address and routing advertisement, the following also required in */etc/rtadvd.conf*.
 ```
 awg0:\
-	:addrs#1:addr="[range address of routed /48 ]":\
+	:addrs#1:addr="xxxx:yyyy:zzzz:358::":\
 	:prefixlen#64:\
-	:tc=default:\
+	:tc=ether:\
 	:raflags#192:\
 	:rdnss="2001:db8:1221::1,2001:4860:4860::8888,2001:4860:4860::8844":
 ```
 
-> To be continued.
+And don't forget to enable rtadvd in rc.conf file :
+```
+rtadvd_enable="YES"             # let our LAN know the IPv6 default route
+rtadvd_interfaces="awg0"      
+```
+
+Just to make sure, I rebooted the gateway. I also did some tcpdump to see what are the packets that actually flying around that causes all the client gets their own IPv6 address assignment.
+
+<p align="center">
+<img width="500" height="350" src="{filename}/images/solicitat.png"/>
+</p>
+
+Then after that, obviously go to one of the client machine, e.g your mac or your linux (or windows, whatever) and perform the following configuration below before pinging some IPv6 address like www.v6.facebook.com from there.
+- Linux
+
+Set the following parameter, you can put it on sysctl.conf to make it survive after reboot.
+
+```
+net.ipv6.conf.wlan0.accept_ra=1
+net.ipv6.conf.wlan0.forwarding=0
+```
+- FreeBSD
+
+Set the following parameter. You can also put it on sysctl.conf
+
+```
+net.inet6.ip6.accept_rtadv=1
+net.inet6.ip6.forwarding=0
+```
+
+If you don't want to reboot, make sure sysctl is re-reading the new entry in sysctl.conf by performing below as root :
+```
+# sysctl -f /etc/sysctl.conf
+```
+
+If the ping still failed from the client, there might be something wrong with the client's routing table. You might want to check if there's another router in your network soliciting a different IPv6 gateway for you ( because that is what happened to me :p). I was stuck for couple of days because of the client always get a strange default gateway that points to *fe80::1*, wth is this route advertisement come from. then I took the tcpdump and 1 string came up in **clear**
+
+<p align="center">
+<img width="500" height="350" src="{filename}/images/router-adv.png"/>
+</p>
