@@ -1,7 +1,7 @@
-Title: DNS Setup for Theprasojos in Ubuntu@Pine64
+Title: DNS Setup for Theprasojos in Ubuntu-Pine64
 Date: 2018-03-25
 Tags: Unix Linux Bind Server Internet Named
-Category: Server@Home
+Category: HomeServer
 
 Long time I have not write on this blog, mostly because I can't remember how to configure the pelican in my mac (yeah, this blog uses pelican generator for html content, bye bye Wordpress, I guess you are no longer impress everyone by now). And luckily this blog's content is stored in a repos, making me easier to pull the content back. After some googling with keyword = 'pelican', I manage to get the set up back up and running.
 
