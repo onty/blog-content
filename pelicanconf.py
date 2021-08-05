@@ -27,7 +27,8 @@ AUTHOR_FEED_RSS = None
 STATIC_PATHS = ['images']
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('My Travelling Logs', 'http://travel.theprasojos.id'),
+         ('My Travelling Logs', 'https://travel.theprasojos.id'),
+         ('Firdaus Irlandia', 'https://firdaus.ie'),
          ('Blognya TePot', 'https://vhynaulia.wordpress.com/'),
          ('Theprasojos Family', 'http://theprasojos.wordpress.com'),)
 
