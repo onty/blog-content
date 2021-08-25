@@ -81,9 +81,51 @@ proc            /proc           procfs  rw,noauto       0       0
 
 
 ```
-Now, let's switch to user `steam`  and run the following command to get into `Steamc>` prompt.
+
+Although manual mount can be used to mount all those special files once added to `/etc/fstab`, at this point I'd prefer rebooting the machine just to ensure that those files will automatically be mounted during startup.
+
+Now, let's switch to user `steam`  and install the Steam app as below. It will put all the required library under `/home/steam` directory.
+
+```bash
+$ steam-install
+
+```
+
+And run the following command to get into `Steam>` prompt.
 
 ```bash
 $ LD_LIBRARY_PATH=/home/steam/linux32/ steam -textclient
+```
+
+Now to install the actual CSGO dedicated server following the steps outlined [https://developer.valvesoftware.com/wiki/Counter-Strike:Global_Offensive_Dedicated_Servers](here)
+
+```bash
+Steam> force_install_dir /datazfs/STEAM/
+Steam> login anonymous
+Steam> app_update 740 validate
+```
+
+And finally, still as `steam` user, run the following to start the CSGO dedicated server :
+
+```bash
+$ cd /datazfs/STEAM
+$ LD_LIBRARY_PATH=/home/steam/linux32/:$LD_LIBRARY_PATH ./srcds_run -game csgo -console -usercon +game_type 0 +maxplayers 8 +game_mode 0 +mapgroup mg_active +map de_dust2 +sv_setsteamaccount [Game Server Login Token] -autoupdate
 
 ```
+
+More information about Game Server Login Token can be found [https://docs.linuxgsm.com/steamcmd/gslt](here).
+I observed lots of debugging-related message when starting the `steam -textclient` command, but so far it's all just a debugging message and nothing to worried about. Below is a good indicator message to see whether the dedicated server is ready to start hosting game and accept connections:
+
+```bash
+Connection to Steam servers successful.
+   Public IP is xxx.xxx.xxx.xxx.
+Assigned anonymous gameserver Steam ID [A:1:155311110:18312].
+Gameserver logged on to Steam, assigned identity steamid:9015064214xxxxxxx
+Set SteamNetworkingSockets P2P_STUN_ServerList to '103.10.124.165:3478' as per SteamNetworkingSocketsSerialized
+VAC secure mode is activated.
+GC Connection established for server version 1316, instance idx 1
+
+```
+
+
+Enjoy CSGO with your Friends and Family !
