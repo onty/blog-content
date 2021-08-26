@@ -50,9 +50,9 @@ A set of workarounds for running the Linux Steam client under FreeBSD.
 WWW: https://github.com/shkhln/linuxulator-steam-utils
 ```
 
-The answer is because, while the `steam` client is 64 bit, the game itself (e.g CS GO) runs on 32 bit mode, so we will eventually need it later on when we run the game server.
+The answer is because while the `steam` client is 64 bit, the game itself (e.g CS GO) runs on 32 bit mode, so we will eventually need it later on when we run the game server.
 
-Load the kernel module by sing `kldload` command :
+Load the kernel module by using `kldload` command :
 
 ```bash
 
@@ -97,7 +97,7 @@ And run the following command to get into `Steam>` prompt.
 $ LD_LIBRARY_PATH=/home/steam/linux32/ steam -textclient
 ```
 
-Now to install the actual CSGO dedicated server following the steps outlined [https://developer.valvesoftware.com/wiki/Counter-Strike:Global_Offensive_Dedicated_Servers](here)
+Now to install the actual CSGO dedicated server following the steps outlined [here](https://developer.valvesoftware.com/wiki/Counter-Strike:Global_Offensive_Dedicated_Servers)
 
 ```bash
 Steam> force_install_dir /datazfs/STEAM/
@@ -113,7 +113,7 @@ $ LD_LIBRARY_PATH=/home/steam/linux32/:$LD_LIBRARY_PATH ./srcds_run -game csgo -
 
 ```
 
-More information about Game Server Login Token can be found [https://docs.linuxgsm.com/steamcmd/gslt](here).
+More information about Game Server Login Token can be found [here](https://docs.linuxgsm.com/steamcmd/gslt).
 I observed lots of debugging-related message when starting the `steam -textclient` command, but so far it's all just a debugging message and nothing to worried about. Below is a good indicator message to see whether the dedicated server is ready to start hosting game and accept connections:
 
 ```bash
