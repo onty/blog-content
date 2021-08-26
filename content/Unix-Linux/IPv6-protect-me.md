@@ -1,6 +1,6 @@
 Title: FreeBSD at Home (3) : IPv6 is there, now what ?
 Date: 2018-07-10
-Tags: Unix Linux
+Tags: Unix Linux FreeBSD
 Category: Unix/Linux
 
 So, I got IPv6 running in the house, now every device at home is routable from internet, which is ... 10% good and around 90% BAD.

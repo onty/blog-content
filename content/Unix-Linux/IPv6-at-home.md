@@ -1,6 +1,6 @@
 Title: FreeBSD at Home (2) : IPv6 Setup for Home Network
 Date: 2018-07-01
-Tags: Unix Linux
+Tags: Unix Linux FreeBSD
 Category: Unix/Linux
 
 So I have this plenty of time to kill, and I decided to do something with the Pine64 board. Currently it's powered by Ubuntu Xenial base Image by Longsleep, and everything was fine (well the initial boot up was stuck couple of times, and I have to reset it several times until it boots properly, but overall it's ok). Then I was thinking to leave out of the comfort zone by putting FreeBSD on it. Before that, I have tried Remix OS (nice GUI, pretty stable, useful for Multimedia use), Android (the worse and slowest OS I have ever run on this board). I have to say with Ubuntu OS installed there, I did not use it that much. I put Postfix mail server, Nginx webserver, and that's it. Sometime I also use it to run some disk/partition repair job for my 1TB disk using the *TestDisk* tool (pretty cool stuff from cgSecurity, well done guys).

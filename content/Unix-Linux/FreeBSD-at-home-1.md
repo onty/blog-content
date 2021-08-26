@@ -1,6 +1,6 @@
 Title: FreeBSD at Home (1) : Replacing Linux with FreeBSD
 Date: 2018-06-19
-Tags: Unix Linux
+Tags: Unix Linux FreeBSD
 Category: Unix/Linux
 
 
